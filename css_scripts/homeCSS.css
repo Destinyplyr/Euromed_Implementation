@@ -1,0 +1,279 @@
+body
+{
+	background-color:  #474e5d;   /* Dark Blue */
+	font-family: Lato;
+}
+
+h1
+{
+	color : #FFEFEB;
+}
+
+p
+{
+	color: white;
+}
+
+
+#media
+{
+	float: left;
+}
+
+a {text-decoration: none;} 
+
+ul 
+{
+    list-style-type: none;
+    margin-left: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li 
+{
+    float: left;
+}
+
+li a, .dropbtn 
+{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Lato;
+}
+
+li a:hover, .dropdown:hover .dropbtn 
+{
+	color: #1abc9c !important;
+    /*background-color: black;*/
+}
+
+li.dropdown 
+{
+    display: inline-block;
+}
+
+.dropdown-content 
+{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a 
+{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content 
+{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ####################################################  OLD CSS CODE  #################################################### */
+
+
+/*body
+{
+    background-color: tomato;
+}
+
+a { text-decoration: none }
+
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+
+header
+{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+nav
+{ 
+    background-color: lightskyblue;
+    height: 500px;
+    width: 200px;
+    font-size: 25px;
+    float: left;
+    line-height: 60px;
+    padding: 5px;
+}
+
+section
+{
+    float: left;
+    padding: 20px;
+    width: 80%;
+}
+
+
+footer
+{
+    background-color: black;    
+    color: white;
+    clear: both;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+}
+
+nav a
+{
+    color: darkred;
+}
+
+#Guild_Image
+{
+    width: 1280px;
+    height: 720px;
+    padding: 5px;
+}
+
+#tabs
+{
+    padding: 0;
+}
+
+#tabs li
+{
+    display: inline; 
+}
+
+#tabs li a
+{
+    background-color: white; 
+    color: darkred; 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    border-radius: 4px 4px 0 0;
+    border: solid 1px;
+}
+
+#tabs li a:hover
+{
+    background-color: yellow; 
+}
+
+#heading1
+{
+    color: white;
+}
+
+#Grand_Magic_Games
+{
+    color: white;
+    width: 65%;
+    border: 1px solid yellow;
+    padding: 10px;
+    <!-- margin: 5px; -->
+}
+
+#Games_Entrance
+{
+    width: 300px;
+    height: 250px;
+    float: left;
+    padding: 10px;
+}
+
+#Results_Table
+{
+    color: black;
+}*/
