@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href ="../css_scripts/homeCSS.css">
+    <!-- <link rel="stylesheet" type="text/css" href ="../css_scripts/tdButton.css"> -->
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
     <!-- <link rel="stylesheet" type="text/css" href ="bootstrap.min.css">
     <script type="text/javascript" src="bootstrap.min.js" ></script>
@@ -57,12 +58,61 @@
       </li>
       <li><a href="#venue"> Venue </a></li>
       <li><a href="#prev_events"> Previous Events </a></li>
-      <li><a href="#tickets"> TICKETS </a></li>
+      <li class="tickets"><a href="#tickets"> TICKETS </a></li>
     </ul>
 
-    <h1> <strong> EUROMED 2016 &nbsp &nbsp &nbsp &nbsp 31 October - 5 November 2016 </strong> </h1> 
+    <a href="mainSample.php">
+       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
+    </a>
+
+    <h1> EUROMED 2016 <span class="conDate"> 31 October - 5 November 2016 </span> </h1> 
+
     <p> Digital Cultural Heritage : Documentation <br>
     Preservation and Protection </p>
-    <p> Filoxenia Conference Center | Nicosia, Cyprus </p>
+    <p> Filoxenia Conference Center | Nicosia, Cyprus </p> <br> <br>
+
+    <!-- <div class="button-row">
+    	<div><a title="GET TICKETS"></a></div>
+    	<div><a title="another!"></a></div>
+  	</div> -->
+    <div id="getTickets"> 
+      <button class="button ticketButton">GET TICKETS</button>
+    </div>
+
+    <br> <br> <br>
+
+    <hr style="width: 85%">
+
+    <br> <br> 
+
+    <!--  <iframe width="350" height="180" src="https://w2.countingdownto.com/1633515" frameborder="0"></iframe> -->
+    <p id="countText"> CONFERENCE COUNTDOWN : <p> 
+    <div id="clockdiv">
+      <div>
+        <span class="days"></span>
+        <div class="smalltext">Days</div>
+      </div>
+      <div>
+        <span class="hours"></span>
+        <div class="smalltext">Hours</div>
+      </div>
+      <div>
+        <span class="minutes"></span>
+        <div class="smalltext">Minutes</div>
+      </div>
+      <div>
+        <span class="seconds"></span>
+        <div class="smalltext">Seconds</div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src = "../js_scripts/sampleTimer.js" ></script>
+
+    <br> <br> <br>
+
+    <hr style="width: 85%">
+
+    <br> <br> 
+
   </body>
 </html>
