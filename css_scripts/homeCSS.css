@@ -196,15 +196,78 @@ li.dropdown
 
 
 
+.images 
+{
+    display: inline;
+    margin: 20px;
+    padding: 15px;
+    vertical-align:middle;
+    width: 150px;
+    height: 200px;
+    border: 5px solid darkorange;
+    background-color: #00816A;
+    
+}
+
+
+#content 
+{
+    display: block;
+    margin: 0px;
+    padding: 10px 0px 10px 100px;
+    position: relative;
+    height: auto;
+    max-width: auto;
+    overflow-y: hidden;
+    overflow-x:auto;
+    word-wrap:normal;
+    white-space:nowrap;
+}
 
 
 
+.tooltip
+{
+    display: inline;
+    position: inherit;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+.tooltip:hover:after
+{
+    background: #333;
+    /*background: rgba(0,0,0,.8);*/
+    border-radius: 5px;
+    bottom: 130px;
+    color: #00BF96;
+    content: attr(title);
+    left: 10%;
+    padding: 5px 15px 10px;
+    position: absolute;
+    z-index: 98;
+    width: 150px;
+    text-align: center;
+}
+
+.tooltip:hover:before
+{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6px 6px 0 6px;
+    bottom: 130px;
+    content: "";
+    left: 50%;
+    position: absolute;
+    z-index: 99;
+}
 
 
 
-
-
-
+#restSpeakers
+{
+    padding-left: 35%;
+}
 
 
 

@@ -4,12 +4,13 @@
     <title> Euromed 2016 | Home </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script> -->
+    
     <link rel="stylesheet" type="text/css" href ="../css_scripts/homeCSS.css">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">    
     <!-- <link rel="stylesheet" type="text/css" href ="../css_scripts/tdButton.css"> -->
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
-    <!-- <link rel="stylesheet" type="text/css" href ="bootstrap.min.css">
-    <script type="text/javascript" src="bootstrap.min.js" ></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
   </head>
   <body>
 
@@ -18,14 +19,14 @@
     <ul>
       <div id="media">
         <a href="http://www.w3schools.com">
-        <img  alt="facebook" src="../images/_facebookIcon.png" width="50" height="50">
+        <img  alt="facebook" src="../images/_facebookIcon.png" width="50" height="55">
         </a>
 
         <a href="http://www.hello.com">
-        <img  alt="twitter" src="../images/_twitterIcon.png" width="50" height="50"> </a>
+        <img  alt="twitter" src="../images/_twitterIcon.png" width="50" height="55"> </a>
 
         <a href="http://www.w3schools.com">
-        <img  alt="instagram" src="../images/_instagramIcon.png" width="50" height="50">
+        <img  alt="instagram" src="../images/_instagramIcon.png" width="50" height="55">
         </a>
       </div>
 
@@ -85,8 +86,8 @@
 
     <br> <br> 
 
-    <!--  <iframe width="350" height="180" src="https://w2.countingdownto.com/1633515" frameborder="0"></iframe> -->
-    <p id="countText"> CONFERENCE COUNTDOWN : <p> 
+    <!--  <iframe width="350" height="150" src="https://w2.countingdownto.com/1633515" frameborder="0"></iframe> -->
+    <p id="countText"> CONFERENCE COUNTDOWN : <p> <br>
     <div id="clockdiv">
       <div>
         <span class="days"></span>
@@ -113,6 +114,47 @@
     <hr style="width: 85%">
 
     <br> <br> 
+
+    <p id="countText" style="padding-right: 5%;"> KEYNOTE SPEAKERS : <p> 
+
+    <!-- <div id="speakers"> 
+    <img style="float: left; margin: 2% 0 15% 25%;" src="http://www.euromed2016.eu/application/files/7314/5432/9155/Wolfgang-Kippes_800.jpg" width="100" height="150" />
+    <img style="float: left; margin: 2% 0 15% 5%;" src="http://www.euromed2016.eu/application/files/6814/5432/9354/Fellner_060Rc.png" width="100" height="150"/>
+    <img style="float: left; margin: 2% 0 15% 5%;" src="http://www.euromed2016.eu/application/files/1114/5503/1175/Mustafa_Erdik.jpg" width="100" height="150"/>
+    <img style="float: left; margin: 2% 0 15% 5%;" src="http://www.euromed2016.eu/application/files/9414/7504/2696/Sarah_Image.jpg" width="100" height="150"/>
+    <img style="float: left; margin: 2% 0 15% 5%;" src="http://www.euromed2016.eu/application/files/3514/7504/2458/Axel-Ermert-2016.jpg" width="100" height="150"/>
+    </div> -->
+
+    <div id="content">
+        <a title="Wolfgang Kippes." class="tooltip">
+            <img src="../images/Wolfgang_Kippes.jpg"  class="images" />
+        </a>
+        <a title="Fellner." class="tooltip">
+            <img src="../images/Fellner.png" class="images" />
+        </a>
+        <a title="Mustafa Erdik." class="tooltip">
+            <img src="../images/Mustafa_Erdik.jpg"  class="images" />
+        </a>
+        <a title="Sarah Image." class="tooltip">
+            <img src="../images/Sarah.jpg"  class="images" />
+        </a>
+        <a title="Axel Ermert." class="tooltip">
+            <img src="../images/Axel_Ermert.jpg"  class="images" />
+        </a>
+    </div>
+
+    <br> <br>
+
+    <div id="restSpeakers"> 
+      <button class="button ticketButton">CHECK OUT ALL THE SPEAKERS</button>
+    </div>
+
+    <br> <br> <br>
+
+    <hr style="width: 85%">
+
+    <br> <br> 
+
 
   </body>
 </html>
