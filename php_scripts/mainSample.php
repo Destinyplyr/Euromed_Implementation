@@ -66,6 +66,8 @@
        <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
     </a>
 
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
     <h1> EUROMED 2016 <span class="conDate"> 31 October - 5 November 2016 </span> </h1> 
 
     <p> Digital Cultural Heritage : Documentation <br>
@@ -80,6 +82,9 @@
       <button class="button ticketButton">GET TICKETS</button>
     </div>
 
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
     <br> <br> <br>
 
     <hr style="width: 85%">
@@ -87,7 +92,7 @@
     <br> <br> 
 
     <!--  <iframe width="350" height="150" src="https://w2.countingdownto.com/1633515" frameborder="0"></iframe> -->
-    <p id="countText"> CONFERENCE COUNTDOWN : <p> <br>
+    <p id="countText"> CONFERENCE COUNTDOWN  <p> <br>
     <div id="clockdiv">
       <div>
         <span class="days"></span>
@@ -109,13 +114,16 @@
 
     <script type="text/javascript" src = "../js_scripts/sampleTimer.js" ></script>
 
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
     <br> <br> <br>
 
     <hr style="width: 85%">
 
     <br> <br> 
 
-    <p id="countText" style="padding-right: 5%;"> KEYNOTE SPEAKERS : <p> 
+    <p id="countText" style="padding-right: 5%;"> KEYNOTE SPEAKERS  <p> 
 
     <!-- <div id="speakers"> 
     <img style="float: left; margin: 2% 0 15% 25%;" src="http://www.euromed2016.eu/application/files/7314/5432/9155/Wolfgang-Kippes_800.jpg" width="100" height="150" />
@@ -145,9 +153,11 @@
 
     <br> <br>
 
-    <div id="restSpeakers"> 
+    <div id="restSpeakersButton"> 
       <button class="button ticketButton">CHECK OUT ALL THE SPEAKERS</button>
     </div>
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
     <br> <br> <br>
 
@@ -155,6 +165,199 @@
 
     <br> <br> 
 
+    <p id="countText" style="padding-right: 10%;"> THIS YEAR <p> 
+
+
+    <p id="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+
+    <br> <br>
+
+    <div id="manifestoButton"> 
+      <button class="button ticketButton"> View our manifesto </button>
+    </div>
+
+    <br> <br>
+
+    <div id="previousEventsButton"> 
+      <button class="button ticketButton"> View previous events </button>
+    </div>
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+    <br> <br> <br>
+
+    <hr style="width: 85%">
+
+    <br> <br> 
+
+    <p id="countText" style="padding-right: 10%;"> VISITORS <p> 
+
+
+    <div class="inline-div">
+        <p align="center">Title 1</p>
+         <!-- <hr class="vr"> -->
+       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       </p>
+       <div id="getTickets"> 
+         <button class="button ticketButton">GET TICKETS</button>
+       </div>
+    </div>
+
+    <div class="inline-div">
+    <p align="center">Title 2</p>
+        <p id="programInfo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div id="getTickets"> 
+          <button class="button ticketButton">GET TICKETS</button>
+        </div>
+    </div>
+    <div class="inline-div">
+        <p align="center">Title 3</p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div id="getTickets"> 
+          <button class="button ticketButton">GET TICKETS</button>
+        </div>
+    </div>  
+
+
+
+
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+    <br> <br> <br>
+
+    <hr style="width: 85%">
+
+    <br> <br> 
+
+    <p id="countText" style="padding-right: 10%;"> SPEAKERS <p> 
+
+    <div class="inline-div">
+        <p align="center">Title 1</p>
+         <!-- <hr class="vr"> -->
+       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       </p>
+       <div id="getTickets"> 
+         <button class="button ticketButton">GET TICKETS</button>
+       </div>
+    </div>
+
+    <div class="inline-div">
+    <p align="center">Title 2</p>
+        <p id="programInfo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div id="getTickets"> 
+          <button class="button ticketButton">GET TICKETS</button>
+        </div>
+    </div>
+    <div class="inline-div">
+        <p align="center">Title 3</p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div id="getTickets"> 
+          <button class="button ticketButton">GET TICKETS</button>
+        </div>
+    </div> 
+
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->   
+
+    <br> <br> <br>
+
+    <hr style="width: 85%">
+
+    <br> <br> 
+
+    <p id="countText" style="padding-right: 10%;"> EXHIBITORS <p> 
+
+    <div class="inline-div">
+        <p align="center">Title 1</p>
+         <!-- <hr class="vr"> -->
+       <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+       </p>
+       <div id="getTickets"> 
+         <button class="button ticketButton">GET TICKETS</button>
+       </div>
+    </div>
+
+    <div class="inline-div">
+    <p align="center">Title 2</p>
+        <p id="programInfo">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div id="getTickets"> 
+          <button class="button ticketButton">GET TICKETS</button>
+        </div>
+    </div>
+    <div class="inline-div">
+        <p align="center">Title 3</p>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+        <div id="getTickets"> 
+          <button class="button ticketButton">GET TICKETS</button>
+        </div>
+    </div> 
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+    <br> <br> <br>
+
+    <hr style="width: 85%">
+
+    <br> <br> 
+
+    <p id="countText" style="padding-right: 10%;"> VENUE <p> 
+
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+    <br> <br> <br>
+
+    <hr style="width: 85%">
+
+    <br> <br> 
+
+    <p id="countText" style="padding-right: 10%;"> SPONSORS <p> 
+
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+    <br> <br> <br>
+
+    <hr style="width: 85%">
+
+    <br> <br> 
+
+    <p id="countText" style="padding-right: 10%;"> NEED ANY HELP? <p> 
+
+
+    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+
+    <br> <br> <br>
+
+    <hr style="width: 85%">
+
+    <br> <br> 
+
+    <div style="padding-left: 42%; padding-bottom: 10px;"  id="media">
+      <a href="http://www.w3schools.com">
+      <img  alt="facebook" src="../images/_facebookIcon.png" width="50" height="55">
+      </a>
+
+      <a href="http://www.hello.com">
+      <img  alt="twitter" src="../images/_twitterIcon.png" width="50" height="55"> </a>
+
+      <a href="http://www.w3schools.com">
+      <img  alt="instagram" src="../images/_instagramIcon.png" width="50" height="55">
+      </a>
+    </div>
 
   </body>
 </html>

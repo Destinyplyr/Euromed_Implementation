@@ -264,12 +264,63 @@ li.dropdown
 
 
 
-#restSpeakers
+#restSpeakersButton
 {
     padding-left: 35%;
 }
 
+#lorem_ipsum
+{
+    width: 60%;
+    padding-left: 20%;
+    word-wrap: break-word;
+    font-family: Garamond;
+    font-size: 20px;
+}
 
+
+#manifestoButton
+{
+    padding-left: 40%;
+}
+
+
+#previousEventsButton
+{
+    padding-left: 39%;
+}
+
+
+#programInfo
+{
+    text-align: left;
+}
+
+
+
+.inline-div 
+{
+    padding-left: 13%;
+    display:inline-block;
+    width: 15%;
+    word-wrap: break-word;
+}
+
+
+/*.vr
+{
+    height: 180px;
+    width: 0px;
+    float: right;
+
+}*/
+
+/*.inline-txtarea 
+{
+    resize: none;
+    border-right: 2px solid red;
+    height:125px;
+}*/
 
 
 
