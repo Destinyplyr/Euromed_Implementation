@@ -194,30 +194,38 @@
 
 
     <div class="inline-div">
-        <p align="center">Title 1</p>
+        <p align="center"> Program Info </p>
          <!-- <hr class="vr"> -->
        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
        </p>
-       <div id="getTickets"> 
-         <button class="button ticketButton">GET TICKETS</button>
+       <div id="programButton"> 
+         <button class="button ticketButton"> Program </button>
        </div>
     </div>
 
     <div class="inline-div">
-    <p align="center">Title 2</p>
+    <p align="center"> Info for students </p>
         <p id="programInfo">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
-        <div id="getTickets"> 
-          <button class="button ticketButton">GET TICKETS</button>
+        <div id="programButton"> 
+          <button class="button ticketButton"> Students </button>
         </div>
     </div>
+
     <div class="inline-div">
-        <p align="center">Title 3</p>
+        <p align="center"> TICKETS </p>
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        DEADLINE 1
+        DEADLINE 2
+        DEADLINE 3
+        DEADLINE 1
+        DEADLINE 2
+        DEADLINE 3
+        DEADLINE 1
+        DEADLINE 2
         </p>
-        <div id="getTickets"> 
+        <div id="programButton"> 
           <button class="button ticketButton">GET TICKETS</button>
         </div>
     </div>  

@@ -293,7 +293,7 @@ li.dropdown
 
 #programInfo
 {
-    text-align: left;
+    
 }
 
 
@@ -304,6 +304,11 @@ li.dropdown
     display:inline-block;
     width: 15%;
     word-wrap: break-word;
+}
+
+
+#programButton
+{
 }
 
 
