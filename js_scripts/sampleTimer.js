@@ -37,5 +37,18 @@ function initializeClock(id, endtime) {
   var timeinterval = setInterval(updateClock, 1000);
 }
 
+
+// function myAjax() {
+//       $.ajax({
+//            type: "POST",
+//            url: '../php_scripts/query.php',
+//            data:{action:'call_this'},
+//            success:function(html) {
+//              alert(html);
+//            }
+
+//       });
+//  }
+
 var deadline = new Date(Date.parse(new Date()) + 319 * 24 * 60 * 60 * 1000);
 initializeClock('clockdiv', deadline);

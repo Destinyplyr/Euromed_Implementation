@@ -1,3 +1,44 @@
+<!-- <?php
+  
+  // function myFuc()
+  // {
+// if(isset($_GET['submit']))
+// {
+//   require_once 'login.php'; 
+//   $conn = new mysqli($hn, $un, $pw, $db);
+//   if ($conn->connect_error) die($conn->connect_error);
+
+//   $query = "SELECT * FROM Foods";
+//   $result = $conn->query($query);
+//   if (!$result) die ($conn->error);
+
+//   $rows = $result->num_rows;
+
+//   for ($i=0; $i < $rows; ++$i) 
+//   {
+//     $result->data_seek($i);
+//     echo "Food number : "  . $result->fetch_assoc()['Color']  . '<br>'; 
+//     $result->data_seek($i);
+//     echo "Flavoe : "  . $result->fetch_assoc()['Flavour'] . '<br>'; 
+//   }
+
+
+
+//   $result->close();
+//   $conn->close();
+// }
+    
+  // }
+
+/*  if (isset($_GET['hello'])) 
+  {
+     myFuc();
+  }*/
+  
+?>
+ -->
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,14 +48,11 @@
    <!--  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
-    
     <link rel="stylesheet" type="text/css" href ="../css_scripts/homeCSS.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">    
     <!-- <link rel="stylesheet" type="text/css" href ="../css_scripts/tdButton.css"> -->
   </head>
   <body>
-
-
 
     <ul>
       <div id="media">
@@ -82,6 +120,14 @@
       <a href="#tickets"><button class="button ticketButton">GET TICKETS</button></a>
     </div>
 
+    <!-- <a id="like" href="#" >Like</a> -->
+    <!-- <a href="" onclick="myAjax()" class="deletebtn">Delete</a> -->
+    <!-- <a href='query.php?hello=true'>Run PHP Function</a> -->
+    <!-- <a href='query.php'>Run PHP Function</a> -->
+    <!-- <form action="" method="GET">
+        <input type="text" name="query" />
+        <input type="submit" name="submit" value="Search" />
+    </form> -->
 
     <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 

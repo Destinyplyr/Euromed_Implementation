@@ -1,6 +1,6 @@
 <?php
 	$hn = 'localhost';
-	$db = 'users';
+	$db = 'neavasi';
 	$un = 'root';
 	$pw = '';
 ?>
