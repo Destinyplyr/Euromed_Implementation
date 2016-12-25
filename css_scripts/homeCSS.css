@@ -19,7 +19,7 @@ h1
     width: 40%;
     height: 100%;
     float: right;
-    padding-right: 7%;
+    padding-right: 3%;
 }
 
 p
@@ -199,7 +199,7 @@ li.dropdown
 .images 
 {
     display: inline;
-    margin: 20px;
+    margin: 15px;
     padding: 15px;
     vertical-align:middle;
     width: 150px;
@@ -243,7 +243,7 @@ li.dropdown
     color: #00BF96;
     content: attr(title);
     left: 10%;
-    padding: 5px 15px 10px;
+    padding: 5px 15px 5px;
     position: absolute;
     z-index: 98;
     width: 150px;
@@ -255,7 +255,7 @@ li.dropdown
     border: solid;
     border-color: #333 transparent;
     border-width: 6px 6px 0 6px;
-    bottom: 130px;
+    bottom: 100px;
     content: "";
     left: 50%;
     position: absolute;
@@ -300,6 +300,7 @@ li.dropdown
 
 .inline-div 
 {
+    text-align: center;
     padding-left: 13%;
     display:inline-block;
     width: 15%;
@@ -310,6 +311,29 @@ li.dropdown
 #programButton
 {
 }
+
+#mapInfo {
+    /*float: left;*/
+    /*padding-left: 0%;*/
+    word-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+#map {
+    display: block;
+    margin: auto;
+    height: 400px;
+    width: 50%;
+    float: right;
+    /*margin-bottom: 40px;*/
+    -webkit-filter: grayscale(50%);
+    filter: grayscale(50%);
+ }
+
+ #clearfix {
+    overflow: auto;
+ }
+
 
 
 /*.vr

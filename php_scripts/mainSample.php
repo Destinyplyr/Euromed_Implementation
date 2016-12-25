@@ -4,9 +4,9 @@
     <title> Euromed 2016 | Home </title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-<!--     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <!--  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
     
     <link rel="stylesheet" type="text/css" href ="../css_scripts/homeCSS.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">    
@@ -18,14 +18,14 @@
 
     <ul>
       <div id="media">
-        <a href="http://www.w3schools.com">
+        <a href="http://www.facebook.com">
         <img  alt="facebook" src="../images/_facebookIcon.png" width="50" height="55">
         </a>
 
-        <a href="http://www.hello.com">
+        <a href="http://www.twitter.com">
         <img  alt="twitter" src="../images/_twitterIcon.png" width="50" height="55"> </a>
 
-        <a href="http://www.w3schools.com">
+        <a href="http://www.instagram.com">
         <img  alt="instagram" src="../images/_instagramIcon.png" width="50" height="55">
         </a>
       </div>
@@ -33,7 +33,7 @@
 
       <li><a href="#contact"> Contact </a></li>
       <li> <a href="#faq"> FAQ </a></li>
-      <li style="padding-left: 25em" class="dropdown">
+      <li style="padding-left: 15em" class="dropdown">
         <a href="javascript:void(0)" class="dropbtn"> Visitors </a>
         <div class="dropdown-content">
           <a href="#">Link 1</a>
@@ -72,14 +72,14 @@
 
     <p> Digital Cultural Heritage : Documentation <br>
     Preservation and Protection </p>
-    <p> Filoxenia Conference Center | Nicosia, Cyprus </p> <br> <br>
+    <p> Filoxenia Conference Center | Nicosia, Cyprus </p> <br>
 
     <!-- <div class="button-row">
     	<div><a title="GET TICKETS"></a></div>
     	<div><a title="another!"></a></div>
   	</div> -->
     <div id="getTickets"> 
-      <button class="button ticketButton">GET TICKETS</button>
+      <a href="#tickets"><button class="button ticketButton">GET TICKETS</button></a>
     </div>
 
 
@@ -326,9 +326,28 @@
 
     <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
-    <br> <br> <br>
+    
+    <div id = "clearfix">
+	    <!-- <div class="map-div"> -->
+	    <div id="map"></div>
+	    <!-- </div> -->
+        <script type="text/javascript" src = "../js_scripts/mapShow.js" ></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyClU3fGihtFNeHlr1Vj96OR0OcGXIkdlnE&callback=initMap">
+        </script>
+	    <p id="mapInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-    <hr style="width: 85%">
+	    <p id="mapInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+	    
+
+        
+
+   	</div>
+
+   	<br> <br> <br> 
+
+   	<hr style="width: 85%; width: auto; overflow: hidden;">
 
     <br> <br> 
 
