@@ -5,6 +5,7 @@
 	    <meta charset="utf-8">
 	    <link rel="stylesheet" type="text/css" href ="../css_scripts/faq.css">
 	    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> 
+	    <script type="text/javascript" src="../js_scripts/collapseLists.js"></script> 
 		<!-- 	    <script type="text/javascript" src="CollapsibleLists.js"></script>  -->
 	    <!-- <link rel="stylesheet" type="text/css" href ="../css_scripts/tdButton.css"> -->
 	</head>
@@ -68,7 +69,7 @@
 
 	    <br> 
 
-	    <hr style="width: 40%;">
+	    <!-- <hr style="width: 40%;"> -->
 
 	    <br> <br> <br> <br> <br> 
 
@@ -77,11 +78,32 @@
 
 	    <br>
 
-	    <div id="programButton"> 
+	  <!--   <div id="programButton"> 
 	      <button class="button ticketButton"> View the questions and answers for this category
 	      	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">  
 	      </button>
-	    </div>
+	    </div> -->
+	   <div id="legends">
+	    	<button onclick="showHide(1);" class="collapseButton"> View the questions and answers for this category  
+	    		
+	    	</button>
+	    	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
+	       	<fieldset id="legendary1" class="majorpoints" style="display: none">
+	      
+	       <div id="mylist1" style="display:none" >
+	           <ul id="qaList">
+	               <li id="qa"> How? </li>
+	               <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+	               <li id="qa"> When? </li>  
+	               <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+	               <li id="qa"> Where? </li>  
+	               <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+	           </ul>
+	       </div>
+	       </fieldset>
+	   </div>
+
+
 
 	    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
@@ -96,10 +118,30 @@
 
 	    <br>
 
-	    <div id="programButton"> 
+	    <!-- <div id="programButton"> 
 	      <button class="button ticketButton"> View the questions and answers for this category
 	      	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
 	      </button>
+	    </div> -->
+
+	    <div id="legends">
+	     	<button onclick="showHide(2);" class="collapseButton"> View the questions and answers for this category  
+	     		
+	     	</button>
+	     	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
+	        	<fieldset id="legendary2" class="majorpoints" style="display: none">
+	       
+	        <div id="mylist2" style="display:none" >
+	            <ul id="qaList">
+	                <li id="qa"> How? </li>
+	                <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+	                <li id="qa"> When? </li>  
+	                <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+	                <li id="qa"> Where? </li>  
+	                <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+	            </ul>
+	        </div>
+	        </fieldset>
 	    </div>
 
 	    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
@@ -115,10 +157,29 @@
 
 	    <br>
 
-	    <div id="programButton"> 
+	    <!-- <div id="programButton"> 
 	      <button class="button ticketButton"> View the questions and answers for this category 
 	      	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
 	      </button>
+	    </div> -->
+	    <div id="legends">
+	     	<button onclick="showHide(3);" class="collapseButton"> View the questions and answers for this category  
+	     		
+	     	</button>
+	     	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
+	        	<fieldset id="legendary3" class="majorpoints" style="display: none">
+	       
+	        <div id="mylist3" style="display:none" >
+	            <ul id="qaList">
+	                <li id="qa"> How? </li>
+	                <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+	                <li id="qa"> When? </li>  
+	                <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+	                <li id="qa"> Where? </li>  
+	                <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </li>
+	            </ul>
+	        </div>
+	        </fieldset>
 	    </div>
 
 	    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->

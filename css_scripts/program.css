@@ -243,7 +243,7 @@ li.dropdown
 
 #lorem_ipsum
 {
-    width: 30%;
+    width: 50%;
     word-wrap: break-word;
     font-size: 20px;
 }
@@ -301,7 +301,7 @@ li.dropdown
 {
     background-color: inherit;
     padding-left: 7%;
-    font-size: 35px;
+    font-size: 25px;
     font-family: Lato;
     color: white;
 }
