@@ -405,3 +405,63 @@ li.dropdown
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+#legends
+{
+    width: 70%;
+}
+
+legend
+{
+   /* padding-bottom: 2%;*/
+}
+
+.majorpoints
+{
+    background-color: inherit;
+}
+
+.majorpointslegend
+{
+    color: darkorange;
+    font-size: 10px;
+    
+}
+
+
+.collapseButton 
+{
+    background-color: white;
+    color: black;
+    font-size: 15px;
+    width: 250px;
+    font-family: Lato;
+    padding: 10px 10px;
+    border: 2px solid #555555;
+    outline: 2px solid white;
+    outline-offset: 2px;
+}
+
+.collapseButton:hover 
+{
+    background-color: darkred;
+    color: white;
+}
+
+
+#qa
+{
+    color: white;
+}

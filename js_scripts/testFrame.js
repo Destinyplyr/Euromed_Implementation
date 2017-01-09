@@ -1,5 +1,6 @@
 function showFrame() 
 { 
+
 	var x = document.getElementById("myFrame");
 	// document.body.style.opacity = 0.52;
 	// x.style.display = 'block';
@@ -9,7 +10,7 @@ function showFrame()
 	var captionText = document.getElementById("caption");
 
     modal.style.display = "block";
-    modalImg.src = "../html_scripts/previous_events.html";
+    modalImg.src = "../html_scripts/info.html";
     modalImg.width = "500px";
     modalImg.height = "500px";
 
@@ -20,4 +21,5 @@ function showFrame()
 	span.onclick = function() { 
 	    modal.style.display = "none";
 	}
+
 }
