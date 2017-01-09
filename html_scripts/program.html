@@ -4,7 +4,8 @@
 	    <title> Euromed 2016 | Program </title>
 	    <meta charset="utf-8">
 	    <link rel="stylesheet" type="text/css" href ="../css_scripts/program.css">
-	    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">    
+	    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> 
+	   	<script type="text/javascript" src="../js_scripts/testFrame.js"></script>    
 	    <!-- <link rel="stylesheet" type="text/css" href ="../css_scripts/tdButton.css"> -->
 	</head>
 
@@ -75,8 +76,13 @@
 
 	    <hr style="width: 85%;">
 
+	   <!--  <iframe id="myFrame" style="display: none;" src="http://www.w3schools.com"></iframe> -->
 
-
+	    <div id="myModal" class="modal">
+	      <span class="close">&times;</span>
+	      <iframe class="modal-content" id="myFrame"> </iframe>
+	      <div id="caption"></div>
+	    </div>
 
 	    <ul id="EventsList" style="padding-left:7%;">
 	    	<li>
@@ -84,7 +90,7 @@
 	    		<div> 
 	    		<p id="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
 		    		<div id="legends">
-		    		 	<button onclick="showHide(1);" class="collapseButton"> View the questions and answers for this category  
+		    		 	<button onclick="showFrame();" class="collapseButton"> View the questions and answers for this category  
 		    		 		
 		    		 	</button>
 		    		 	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
@@ -109,7 +115,7 @@
 	    		<div> 
 	    		<p id="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
 		    		<div id="legends">
-		    		 	<button onclick="showHide(1);" class="collapseButton"> View the questions and answers for this category  
+		    		 	<button onclick="showFrame();" class="collapseButton"> View the questions and answers for this category  
 		    		 		
 		    		 	</button>
 		    		 	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
@@ -141,7 +147,7 @@
 	    		<div> 
 	    		<p id="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
 		    		<div id="legends">
-		    		 	<button onclick="showHide(1);" class="collapseButton"> View the questions and answers for this category  
+		    		 	<button onclick="showFrame();" class="collapseButton"> View the questions and answers for this category  
 		    		 		
 		    		 	</button>
 		    		 	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
@@ -166,7 +172,7 @@
 	    		<div> 
 	    		<p id="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
 		    		<div id="legends">
-		    		 	<button onclick="showHide(1);" class="collapseButton"> View the questions and answers for this category  
+		    		 	<button onclick="showFrame();" class="collapseButton"> View the questions and answers for this category  
 		    		 		
 		    		 	</button>
 		    		 	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
@@ -212,7 +218,7 @@
 	    		<div> 
 	    		<p id="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
 		    		<div id="legends">
-		    		 	<button onclick="showHide(1);" class="collapseButton"> View the questions and answers for this category  
+		    		 	<button onclick="showFrame();" class="collapseButton"> View the questions and answers for this category  
 		    		 		
 		    		 	</button>
 		    		 	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
