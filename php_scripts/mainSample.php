@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php 
+  session_start(); 
+  
+?>
 
 
 <!DOCTYPE html>
@@ -36,11 +39,9 @@
       <li> <a href="#faq"> FAQ </a></li>
     
         <?php
-          
           require_once 'login.php'; 
           $conn = new mysqli($hn, $un, $pw, $db);
           if ($conn->connect_error) die($conn->connect_error);
-
           $error = "";
           if(isset($_POST["submit"]))
           {
@@ -63,8 +64,15 @@
               //If username and password exist in our database then create a session. Otherwise echo error.
               if($rows == 1)
               {
-                $_SESSION['name'] = $username; // Initializing Session
-                echo "<li> <a>  Hello user : " .  $_SESSION['name'] . "</a> </li>";
+                //$_SESSION['name'] = $username; // Initializing Session
+                //echo "<li> <a>  Hello user, " .  $_SESSION['name'] . "</a> </li>";
+                
+                if(isset($_POST['name']))
+                {
+                    $_SESSION['name']= $username;
+                    echo "<li> <a>  Hello user, " .  $_SESSION['name'] . "</a> </li>";
+                }
+                            
                 //echo "heloo,ool". '<br>';
 
                 // for ($i=0; $i < $rows; ++$i) 

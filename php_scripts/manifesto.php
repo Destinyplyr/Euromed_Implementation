@@ -1,10 +1,7 @@
 <?php
-	include('../html_scripts/loginTest.html'); // Include Login Script
-	if ((isset($_SESSION['name']) != '')) 
-	{
-		echo $_SESSION['name'];
-	}
-	error_reporting(-1);
+	session_start();
+	// echo $_SESSION['myValue'];
+	// echo $_SESSION['name'];
 ?>
 
 <!DOCTYPE html>
@@ -35,7 +32,8 @@
 
 	      <li><a href="#contact"> Contact </a></li>
 	      <li> <a href="#faq"> FAQ </a></li>
-	      <li style="padding-left: 25em" class="dropdown">
+	      <?php echo "<li> <a>  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; ?> 
+	      <li style="padding-left: 15em" class="dropdown">
 	        <a href="javascript:void(0)" class="dropbtn"> Visitors </a>
 	        <div class="dropdown-content">
 	          <a href="#">Link 1</a>
