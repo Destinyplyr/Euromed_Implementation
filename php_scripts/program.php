@@ -34,7 +34,7 @@
 	      <li><a href="#contact"> Contact </a></li>
 	      <li> <a href="#faq"> FAQ </a></li>
 	      <?php 
-	       	if(isset($_POST['name']))
+	       	if(isset($_SESSION['name']))
 	        {
 	        	echo "<li> <a>  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; 
 	        }
