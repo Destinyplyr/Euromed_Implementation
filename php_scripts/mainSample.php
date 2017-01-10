@@ -49,7 +49,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">    </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script>
     <link rel="stylesheet" type="text/css" href ="../css_scripts/homeCSS.css">
-    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">    
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> 
+    <script type="text/javascript" src="../js_scripts/testFrame.js"></script>       
     <!-- <link rel="stylesheet" type="text/css" href ="../css_scripts/tdButton.css"> -->
   </head>
   <body>
@@ -100,9 +101,24 @@
       <li class="tickets"><a href="#tickets"> TICKETS </a></li>
     </ul>
 
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <iframe class="modal-content" id="myFrame"> </iframe>
+      <div id="caption"></div>
+    </div>
+  
+
+    <div style="padding-left: 93%;"> 
+      <!-- <button onclick="showMe();" class="button ticketButton"> Login </button> -->
+      <button class="loginButton" onclick="showLogin();"> Login </button>
+    </div>
+
     <a href="mainSample.php">
        <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
     </a>
+
+
+
 
     <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
