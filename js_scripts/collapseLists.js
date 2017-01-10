@@ -1,4 +1,4 @@
-function showFrame() 
+function showHide(category) 
 { 
 	var x = document.getElementsByClassName("collapseButton");
 

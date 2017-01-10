@@ -31,7 +31,12 @@
 
 	      <li><a href="#contact"> Contact </a></li>
 	      <li> <a href="#faq"> FAQ </a></li>
-	      <?php echo "<li> <a>  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; ?> 
+	      <?php 
+	       	if(isset($_POST['name']))
+	        {
+	        	echo "<li> <a>  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; 
+	        }
+	      ?> 
 	      <li style="padding-left: 15em" class="dropdown">
 	        <a href="javascript:void(0)" class="dropbtn"> Visitors </a>
 	        <div class="dropdown-content">

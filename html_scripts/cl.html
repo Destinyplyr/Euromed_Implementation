@@ -1,0 +1,15 @@
+<?php
+include('login.php'); // Include Login Script
+// if ((isset($_SESSION['Name']) != '')) 
+// {
+// header('Location: mySample.php');
+// }
+// error_reporting(-1);
+?>
+<form method="post" action="login.php">
+<label>Username:</label><br>
+<input type="text" name="Name" placeholder="username" /><br><br>
+<label>Password:</label><br>
+<input type="password" name="password" placeholder="password" />  <br><br>
+<input type="submit" value="Login" /> 
+</form>
