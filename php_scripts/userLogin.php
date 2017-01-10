@@ -46,6 +46,6 @@ if(isset($_POST["submit"]))
 	}
 }
 
-session_destroy();
+//session_destroy();
 
 ?>
