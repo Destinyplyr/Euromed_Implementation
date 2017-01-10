@@ -1,9 +1,9 @@
 <?php
-	include('../php_scripts/mainSample.php'); // Include Login Script
-	// if ((isset($_SESSION['name']) != '')) 
-	// {
-	// 	echo $_SESSION['name'];
-	// }
+	include('../html_scripts/loginTest.html'); // Include Login Script
+	if ((isset($_SESSION['name']) != '')) 
+	{
+		echo $_SESSION['name'];
+	}
 	error_reporting(-1);
 ?>
 
