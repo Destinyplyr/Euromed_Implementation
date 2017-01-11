@@ -54,5 +54,14 @@ function showLogout()
     if (r) {
        window.location.href = 'logout.php'
     }
+}
 
+
+function updateInfo()
+{
+	var r = confirm("Are you sure you want to update your info?");
+    if (r) {
+       window.location.href = 'update.php'
+    }
+    // window.location.reload();
 }

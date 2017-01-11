@@ -1,10 +1,16 @@
+<?php
+	session_start();
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 	    <title> Euromed 2016 | Profile Management </title>
 	    <meta charset="utf-8">
 	    <link rel="stylesheet" type="text/css" href ="../css_scripts/profileManagement.css">
-	    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">    
+	    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> 
+	    <script type="text/javascript" src="../js_scripts/testFrame.js"></script>     
 	    <!-- <link rel="stylesheet" type="text/css" href ="../css_scripts/tdButton.css"> -->
 	</head>
 
@@ -71,82 +77,88 @@
 
 	    <h1> Edit your profile </h1> <br>
 
-	    <?php
-	    	
-	    	// function myFuc()
-	    	// {
-	    		require_once 'login.php'; 
-	    		$conn = new mysqli($hn, $un, $pw, $db);
-	    		if ($conn->connect_error)	die($conn->connect_error);
-
-	    		$query = "SELECT * FROM user";
-	    		$result = $conn->query($query);
-	    		if (!$result) die ($conn->error);
-
-	    		$rows = $result->num_rows;
-
-    			$result->data_seek(0);
-    			echo "<p> User's name : "  . $result->fetch_assoc()['Name']	. '</p> <br>';	
-    			$result->data_seek(0);
-    			echo "<p> User's e-mail : "  . $result->fetch_assoc()['E-mail']	. '</p> <br>';
-    			$result->data_seek(0);
-    			echo "<p> User's telephone : "  . $result->fetch_assoc()['Telephone']	. '</p>';	
-    			$result->data_seek(0);
-    			echo "<p> User's institution : "  . $result->fetch_assoc()['Institution']	. '</p> <br>';	
-    			$result->data_seek(0);
-    			echo "<p> User's institution country : "  . $result->fetch_assoc()['Institution Country']	. '</p> <br>';	
-    			$result->data_seek(0);
-    			echo "<p> User's address : "  . $result->fetch_assoc()['Address']	. '</p> <br>';	
-    			$result->data_seek(0);
-    			echo "<p> User's city : "  . $result->fetch_assoc()['City']	. '</p> <br>';	
-    			$result->data_seek(0);
-    			echo "<p> User's state : "  . $result->fetch_assoc()['State']	. '</p> <br>';		
-    			$result->data_seek(0);
-    			echo "<p> User's postal code : "  . $result->fetch_assoc()['Postal Code']	. '</p> <br>';
-    			$result->data_seek(0);
-    			echo "<p> User's country : "  . $result->fetch_assoc()['Country']	. '</p> <br>';	
-    		
-
-
-
-	    		$result->close();
-	    		$conn->close();
-	    	// }
-
-	    /*	if (isset($_GET['hello'])) 
-	    	{
-	    	   myFuc();
-	    	}*/
-	    	
-	    ?>
-
 	    <br> 
 
-	    <p> Your Information  </p>
+	    <p > Your Information </p>
+
+	    <hr style=" width: 85%;">
+
+       	<div style="padding-left: 7.5%;">
+       		    <?php
+       				include('login.php'); 
+       				$conn = new mysqli($hn, $un, $pw, $db);
+       				if ($conn->connect_error) die($conn->connect_error);
+       				$username=$_SESSION['name'];
+
+       				$query = "SELECT * FROM user WHERE Name = '$username'";
+
+       				if ($result=mysqli_query($conn,$query))
+       				{
+       					//echo "<table>";
+       					$row=mysqli_fetch_row($result);
+       					for ($i=0; $i < 10; ++$i) 
+       					{
+       						$fieldinfo=mysqli_fetch_field($result);
+       					   	echo "<label>" . $fieldinfo->name  . "</label>" . "<input name = " .  "'". $fieldinfo->name . "'" . " type = " .  "text " . "placeholder = "  . "'". $row[$i] . "'" . "/>" . "<br>";
+       					}
+       					
+       				 	// while ()
+       				  //   {
+       				    	
+       				  //   	for ($i=0; $i < 1; ++$i) 
+       				  //   	{ 
+       				  //   		// echo $i;
+       				  //   		// echo $i+1 . "<br>";
+       				  //   		echo "<tr><th >" "</th>  </th> </tr>";
+       				  //   	}
+       				  //   }
+       				    //echo "</table>";
+       				 	mysqli_free_result($result);
+       				}
+       				$conn->close();
+       		    ?>
 
 
+       	</div>
+       	<br>
+       	<form method="post" action="">
+       		<input onclick="updateInfo();" style="margin-left: 13%;"  type="submit" name="subUpdate" value="Update" /> 
+       	</form >
 	    
+	    <!-- <div style="padding-left: 50%;">
+	    <p> Update Your Information  </p>
 
-	    
 
 
 	    <form style="padding-left: 7.5%;" method="post" action="">
-	    	<label>Name :</label> <label style="padding-left: 15%;">E-mail :</label> <br> <input type="text" name="name" placeholder="name" />
+	    	<label>Name :</label> <label style="padding-left: 25%;">E-mail :</label> <br> <input type="text" name="name" placeholder="name" />
 	    	<input style="margin-left: 5%;" type="text" name="e-mail" placeholder="e-mail" /><br><br>
-	    	<label>Telephone :</label> <label style="padding-left: 12.5%;">Institution :</label> <br> <input type="text" name="telephone" placeholder="telephone" />
+	    	<label>Telephone :</label> <label style="padding-left: 20%;">Institution :</label> <br> <input type="text" name="telephone" placeholder="telephone" />
 	    	<input style="margin-left: 5%;" type="text" name="institution" placeholder="institution" /><br><br>
-	    	<label>Institution Country :</label> <label style="padding-left: 7.5%;">Address :</label> <br> <input type="text" name="instCountry" placeholder="institution country" />
+	    	<label>Institution Country :</label> <label style="padding-left: 10%;">Address :</label> <br> <input type="text" name="instCountry" placeholder="institution country" />
 	    	<input style="margin-left: 5%;" type="text" name="address" placeholder="address" /><br><br>
-	    	<label>City :</label> <label style="padding-left: 16%;">State :</label> <br> <input type="text" name="city" placeholder="city" />
+	    	<label>City :</label> <label style="padding-left: 27%;">State :</label> <br> <input type="text" name="city" placeholder="city" />
 	    	<input style="margin-left: 5%;" type="text" name="state" placeholder="state" /><br><br>
-	    	<label>Postal Code :</label> <label style="padding-left: 11.5%;">Country :</label> <br> <input type="text" name="postalCode" placeholder="postal code" />
+	    	<label>Postal Code :</label> <label style="padding-left: 18%;">Country :</label> <br> <input type="text" name="postalCode" placeholder="postal code" />
 	    	<input style="margin-left: 5%;" type="text" name="country" placeholder="country" /><br><br>
 
 	    	<label style="padding-left: 8%;">Password:</label><br>
 	    	<input  style="margin-left: 8%;" type="password" name="pass" placeholder="password" />  <br><br>
 	    	<input  type="submit" name="submit" value="Update" /> 
 	    </form>
+	    </div> -->
 
+
+	    <br> <br>
+	    <div>
+    	    
+
+	    </div>
+	   
+
+
+
+	   
 
 	    <br> <br> 
 

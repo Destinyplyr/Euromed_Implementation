@@ -43,7 +43,7 @@
       <?php 
         if(isset($_SESSION['name']))
         {
-          echo "<li> <a>  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; 
+          echo "<li> <a href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; 
         }
       ?> 
       <li style="padding-left: 15em" class="dropdown">
