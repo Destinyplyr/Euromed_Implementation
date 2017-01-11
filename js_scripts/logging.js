@@ -1,16 +1,12 @@
-function showFrame() 
-{ 
-
-	var x = document.getElementById("myFrame");
-	// document.body.style.opacity = 0.52;
-	// x.style.display = 'block';
+function showLogin()
+{
 	// Get the modal
 	var modal = document.getElementById('myModal');
 	var modalImg = document.getElementById("myFrame");
 	var captionText = document.getElementById("caption");
 
     modal.style.display = "block";
-    modalImg.src = "../html_scripts/info.html";
+    modalImg.src = "../php_scripts/loginTest.php";
     modalImg.width = "500px";
     modalImg.height = "500px";
 
@@ -21,5 +17,4 @@ function showFrame()
 	span.onclick = function() { 
 	    modal.style.display = "none";
 	}
-
 }
