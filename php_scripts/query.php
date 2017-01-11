@@ -1,34 +1,19 @@
 <?php
 	
-	// function myFuc()
-	// {
-		require_once 'login.php'; 
-		$conn = new mysqli($hn, $un, $pw, $db);
-		if ($conn->connect_error)	die($conn->connect_error);
+	require_once 'login.php'; 
+	$conn = new mysqli($hn, $un, $pw, $db);
+	if ($conn->connect_error)	die($conn->connect_error);
 
-		$query = "SELECT * FROM user";
-		$result = $conn->query($query);
-		if (!$result) die ($conn->error);
+	$address = "Pen";
 
-		$rows = $result->num_rows;
+	$sql = "UPDATE user SET Name='Doe' WHERE Address='$address'";
 
-		for ($i=0; $i < $rows; ++$i) 
-		{
-			$result->data_seek($i);
-			echo "User's name : "  . $result->fetch_assoc()['Name']	. '<br>';	
-			$result->data_seek($i);
-			echo "User's e-mal : "  . $result->fetch_assoc()['E-mail']	. '<br>';	
-		}
+	if ($conn->query($sql) === TRUE) {
+	    echo "Record updated successfully";
+	} else {
+	    echo "Error updating record: " . $conn->error;
+	}
 
-
-
-		$result->close();
-		$conn->close();
-	// }
-
-/*	if (isset($_GET['hello'])) 
-	{
-	   myFuc();
-	}*/
+	$conn->close();
 	
 ?>

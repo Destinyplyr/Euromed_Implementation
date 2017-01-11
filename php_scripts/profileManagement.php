@@ -1,5 +1,13 @@
 <?php
 	session_start();
+	//include('update.php'); // Include Login Script
+	// if ((isset($_SESSION['name']) != '')) 
+	// {
+	// 	echo $_SESSION['name'];
+	// 	//header("Location: mainSample.php");
+	// }
+	//echo "myefmtmymy";
+	//error_reporting(-1);
 ?>
 
 
@@ -85,6 +93,7 @@
 
        	<div style="padding-left: 7.5%;">
        		    <?php
+
        				include('login.php'); 
        				$conn = new mysqli($hn, $un, $pw, $db);
        				if ($conn->connect_error) die($conn->connect_error);
@@ -122,7 +131,7 @@
        	</div>
        	<br>
        	<form method="post" action="">
-       		<input onclick="updateInfo();" style="margin-left: 13%;"  type="submit" name="subUpdate" value="Update" /> 
+       		<input style="margin-left: 13%;"  type="submit" name="subUpdate" value="Update" /> 
        	</form >
 	    
 	    <!-- <div style="padding-left: 50%;">

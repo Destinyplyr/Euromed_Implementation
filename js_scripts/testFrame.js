@@ -63,5 +63,5 @@ function updateInfo()
     if (r) {
        window.location.href = 'update.php'
     }
-    // window.location.reload();
+    window.location.reload();
 }
