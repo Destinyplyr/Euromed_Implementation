@@ -18,7 +18,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script> -->
     <link rel="stylesheet" type="text/css" href ="../css_scripts/homeCSS.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> 
-    <script type="text/javascript" src="../js_scripts/logging.js"></script>       
+    <script type="text/javascript" src="../js_scripts/testFrame.js"></script>       
     <!-- <link rel="stylesheet" type="text/css" href ="../css_scripts/tdButton.css"> -->
   </head>
   <body>
@@ -84,7 +84,8 @@
 
     <div style="padding-left: 93%;"> 
       <!-- <button onclick="showMe();" class="button ticketButton"> Login </button> -->
-      <button class="loginButton" onclick="showLogin();"> Login  </button>
+      <button class="loginButton" onclick="showLogin();"> Login </button>
+      <button class="loginButton" onclick="showLogout();"> Logout </button>
     </div>
 
     <a href="mainSample.php">

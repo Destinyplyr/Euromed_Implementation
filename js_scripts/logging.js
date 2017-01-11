@@ -18,13 +18,3 @@ function showLogin()
 	    modal.style.display = "none";
 	}
 }
-
-
-function showLogout
-{
-	var r = confirm("Do you really want to log out?");
-    if (r) 
-    {
-       window.location.href = 'logout.php'
-    }
-}
