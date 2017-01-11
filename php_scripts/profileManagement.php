@@ -1,6 +1,6 @@
 <?php
-	session_start();
-	//include('update.php'); // Include Login Script
+	// session_start();
+	include('update.php');
 	// if ((isset($_SESSION['name']) != '')) 
 	// {
 	// 	echo $_SESSION['name'];
@@ -95,34 +95,43 @@
        		    <?php
 
        				include('login.php'); 
+
        				$conn = new mysqli($hn, $un, $pw, $db);
        				if ($conn->connect_error) die($conn->connect_error);
-       				$username=$_SESSION['name'];
-
-       				$query = "SELECT * FROM user WHERE Name = '$username'";
-
-       				if ($result=mysqli_query($conn,$query))
+       				if(isset($_SESSION['name']))
        				{
-       					//echo "<table>";
-       					$row=mysqli_fetch_row($result);
-       					for ($i=0; $i < 10; ++$i) 
-       					{
-       						$fieldinfo=mysqli_fetch_field($result);
-       					   	echo "<label>" . $fieldinfo->name  . "</label>" . "<input name = " .  "'". $fieldinfo->name . "'" . " type = " .  "text " . "placeholder = "  . "'". $row[$i] . "'" . "/>" . "<br>";
-       					}
-       					
-       				 	// while ()
-       				  //   {
-       				    	
-       				  //   	for ($i=0; $i < 1; ++$i) 
-       				  //   	{ 
-       				  //   		// echo $i;
-       				  //   		// echo $i+1 . "<br>";
-       				  //   		echo "<tr><th >" "</th>  </th> </tr>";
-       				  //   	}
-       				  //   }
-       				    //echo "</table>";
-       				 	mysqli_free_result($result);
+       				   $username = $_SESSION['name']; 
+       				   $query = "SELECT * FROM user WHERE Name = '$username'";
+
+       				    if ($result=mysqli_query($conn,$query))
+       				   	{
+       				   	$row=mysqli_fetch_row($result);
+       			?>
+       				   <label> Name </label> <input type="text" name="Name" placeholder= <?php echo $row[0] ?> /> <br>
+       				   <label> E-mail </label> <input type="text" name="E-mail" placeholder= <?php echo $row[1] ?> /> <br>
+       				   <label> Telephone </label> <input type="text" name="Telephone" placeholder= <?php echo $row[2] ?> /> <br>
+       				   <label> Institution </label> <input type="text" name="Institution" placeholder= <?php echo $row[3] ?> /> <br>
+       				   <label> Institution Country </label> <input type="text" name="Institution Country" 
+       				   placeholder= <?php echo $row[4] ?> /> <br>
+       				   <label> Address </label> <input type="text" name="Address" placeholder= <?php echo $row[5] ?> /> <br>
+       				   <label> City </label> <input type="text" name="City" placeholder= <?php echo $row[6] ?> /> <br>
+       				   <label> State </label> <input type="text" name="State" placeholder= <?php echo $row[7] ?> /> <br>
+       				   <label> Postal Code </label> <input type="text" name="Postal Code" placeholder= <?php echo $row[8] ?> /> <br>
+       				   <label> Country </label> <input type="text" name="Country" placeholder= <?php echo $row[9] ?> /> <br>
+       				   <?php
+
+       				   	}
+       				   		//echo "<table>";
+       				   		
+       				   		// for ($i=0; $i < 10; ++$i) 
+       				   		// {
+       				   		// 	$fieldinfo=mysqli_fetch_field($result);
+       				   		//    	echo "<label>" . $fieldinfo->name  . "</label>" . "<input name = " .  "'". $fieldinfo->name . "'" . " type = " .  "text " . "placeholder = "  . "'". $row[$i] . "'" . "/>" . "<br>";
+       				   		// }
+       				   		
+       				   	 	mysqli_free_result($result);
+       				
+       				
        				}
        				$conn->close();
        		    ?>

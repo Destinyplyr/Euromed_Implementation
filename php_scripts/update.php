@@ -1,4 +1,5 @@
 <?php 
+	session_start();
 	include('login.php'); 
 	$conn = new mysqli($hn, $un, $pw, $db);
 	if ($conn->connect_error) die($conn->connect_error);
@@ -6,19 +7,30 @@
 	if(isset($_POST["subUpdate"]))
 	{
 	    //Define $username and $password
-	  	$username=$_POST['Name'];
-	    $mail=$_POST['E-mail'];
-	    $telephone=$_POST['Telephone'];
-	    $institution=$_POST['Institution'];
-	    $institution_country=$_POST['Institution Country'];
-	    $address=$_POST['Address'];
-	    $city=$_POST['City'];
-	    $state=$_POST['State'];
-	    $postal_code=$_POST['Postal Code'];
-	    $country=$_POST['Country'];
-		$password=$_SESSION['pass'];
+	    if(empty($_POST["Name"]))
+	    {
+	      $echo = "Both fields are required.";
+	      header("Location: faq.php");
+	    }
+	    else
+	    {
 
-		echo '$state';
+		  	$username=$_POST['Name'];
+		  	header("Location: mainSample.php");
+
+	    }
+	 //    $mail=$_POST['E-mail'];
+	 //    $telephone=$_POST['Telephone'];
+	 //    $institution=$_POST['Institution'];
+	 //    $institution_country=$_POST['Institution Country'];
+	 //    $address=$_POST['Address'];
+	 //    $city=$_POST['City'];
+	 //    $state=$_POST['State'];
+	 //    $postal_code=$_POST['Postal Code'];
+	 //    $country=$_POST['Country'];
+		// $password=$_SESSION['pass'];
+
+		// echo '$state';
 	    //Check username and password from database
 	    // $query=  "UPDATE user SET Name='Vasilis' WHERE Address='$address'";
 	    // $result = $conn->query($query);
@@ -93,7 +105,7 @@
 	    
 
 	// $result->close();
-		$conn->close();
+		// $conn->close();
 		
  
 ?>
