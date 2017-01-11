@@ -1,10 +1,12 @@
 <?php
-	include('userLogin.php'); 
-	// if ((isset($_SESSION['name']) != '')) 
-	// {
-	//  	echo $_SESSION['name'];
-	// }
-	// error_reporting(-1);
+	include('userLogin.php'); // Include Login Script
+	if ((isset($_SESSION['name']) != '')) 
+	{
+		//echo $_SESSION['name'];
+		header("Location: mainSample.php");
+	}
+	//echo "myefmtmymy";
+	error_reporting(-1);
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,10 +16,10 @@
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> 
 </head>
 <body>
-	<form id="loginForm" method="post" action="mainSample.php" target="_top">
-		<label>UsernamePHP:</label><br>
+	<form id="loginForm" method="post" action="" target="_top">
+		<label>UsernamePHP1 :</label><br>
 		<input type="text" name="name" placeholder="username" /><br><br>
-		<label>Password:</label><br>
+		<label>PasswordPHP :</label><br>
 		<input type="password" name="pass" placeholder="password" />  <br><br>
 		<input type="submit" name="submit" value="Login" /> 
 	</form>

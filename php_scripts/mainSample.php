@@ -1,5 +1,9 @@
 <?php 
   session_start(); 
+  // if ((isset($_SESSION['name']) != '')) 
+  // {
+  //   echo $_SESSION['name'];
+  // }
 ?>
 
 
@@ -36,15 +40,12 @@
 
       <li><a href="#contact"> Contact </a></li>
       <li> <a href="#faq"> FAQ </a></li>
-    
-      <?php
-          if ((isset($_SESSION['name']) != '')) 
-          {
-            echo "<li> <a>  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; 
-          }
-          error_reporting(-1);
-      ?>
-
+      <?php 
+        if(isset($_SESSION['name']))
+        {
+          echo "<li> <a>  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; 
+        }
+      ?> 
       <li style="padding-left: 15em" class="dropdown">
         <a href="javascript:void(0)" class="dropbtn"> Visitors </a>
         <div class="dropdown-content">
@@ -83,7 +84,7 @@
 
     <div style="padding-left: 93%;"> 
       <!-- <button onclick="showMe();" class="button ticketButton"> Login </button> -->
-      <button class="loginButton" onclick="showLogin();"> Login </button>
+      <button class="loginButton" onclick="showLogin();"> Login  </button>
     </div>
 
     <a href="mainSample.php">
