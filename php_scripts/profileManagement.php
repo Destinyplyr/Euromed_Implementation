@@ -1,6 +1,5 @@
 <?php
-	// session_start();
-	include('update.php');
+	session_start();
 	// if ((isset($_SESSION['name']) != '')) 
 	// {
 	// 	echo $_SESSION['name'];
@@ -92,97 +91,102 @@
 	    <hr style=" width: 85%;">
 
        	<div style="padding-left: 7.5%;">
-       		    <?php
+		    <?php
+				require_once 'login.php'; 
+				$conn = new mysqli($hn, $un, $pw, $db);
+				if ($conn->connect_error) die($conn->connect_error);
+				
+				if(isset($_SESSION['name']) || isset($_SESSION['username']))
+				{
+				   $username = $_SESSION['name']; 
+				   $query = "SELECT * FROM user WHERE Name = '$username'";
 
-       				include('login.php'); 
+				    if ($result=mysqli_query($conn,$query))
+				   	{
+				   		$row=mysqli_fetch_row($result);
+			?>
+			<form method="post" action="">
+			   <label> Name </label> <input type="text" name="username" placeholder= <?php echo $row[0] ?> /> <br>
+			   <label> E-mail </label> <input type="text" name="email" placeholder= <?php echo $row[1] 	?> /> <br>
+			   <label> Telephone </label> <input type="text" name="telephone" placeholder= <?php echo $row[2] ?> /> <br>
+			   <label> Institution </label> <input type="text" name="institution" placeholder= <?php echo $row[3] ?> /> <br>
+			   <label> Institution Country </label> <input type="text" name="institution_country" 
+			   placeholder= <?php echo $row[4] ?> /> <br>
+			   <label> Address </label> <input type="text" name="address" placeholder= <?php echo $row[5] ?> /> <br>
+			   <label> City </label> <input type="text" name="city" placeholder= <?php echo $row[6] ?> /> <br>
+			   <label> State </label> <input type="text" name="state" placeholder= <?php echo $row[7] ?> /> <br>
+			   <label> Postal Code </label> <input type="text" name="postal_code" placeholder= <?php echo $row[8] ?> /> <br>
+			   <label> Country </label> <input type="text" name="country" placeholder= <?php echo $row[9] ?> /> <br> <br>
+			   <input style="margin-left: 7%;"  type="submit" name="subUpdate" value="Update" /> <br> <br>
+			</form >
+       				   
+		   <?php
 
-       				$conn = new mysqli($hn, $un, $pw, $db);
-       				if ($conn->connect_error) die($conn->connect_error);
-       				if(isset($_SESSION['name']))
-       				{
-       				   $username = $_SESSION['name']; 
-       				   $query = "SELECT * FROM user WHERE Name = '$username'";
+				   	}
+				   		
+				   	mysqli_free_result($result);
+				
+				
+				}
+				$conn->close();
+    		?>
 
-       				    if ($result=mysqli_query($conn,$query))
-       				   	{
-       				   	$row=mysqli_fetch_row($result);
-       			?>
-       				   <label> Name </label> <input type="text" name="Name" placeholder= <?php echo $row[0] ?> /> <br>
-       				   <label> E-mail </label> <input type="text" name="E-mail" placeholder= <?php echo $row[1] ?> /> <br>
-       				   <label> Telephone </label> <input type="text" name="Telephone" placeholder= <?php echo $row[2] ?> /> <br>
-       				   <label> Institution </label> <input type="text" name="Institution" placeholder= <?php echo $row[3] ?> /> <br>
-       				   <label> Institution Country </label> <input type="text" name="Institution Country" 
-       				   placeholder= <?php echo $row[4] ?> /> <br>
-       				   <label> Address </label> <input type="text" name="Address" placeholder= <?php echo $row[5] ?> /> <br>
-       				   <label> City </label> <input type="text" name="City" placeholder= <?php echo $row[6] ?> /> <br>
-       				   <label> State </label> <input type="text" name="State" placeholder= <?php echo $row[7] ?> /> <br>
-       				   <label> Postal Code </label> <input type="text" name="Postal Code" placeholder= <?php echo $row[8] ?> /> <br>
-       				   <label> Country </label> <input type="text" name="Country" placeholder= <?php echo $row[9] ?> /> <br>
-       				   <?php
 
-       				   	}
-       				   		//echo "<table>";
-       				   		
-       				   		// for ($i=0; $i < 10; ++$i) 
-       				   		// {
-       				   		// 	$fieldinfo=mysqli_fetch_field($result);
-       				   		//    	echo "<label>" . $fieldinfo->name  . "</label>" . "<input name = " .  "'". $fieldinfo->name . "'" . " type = " .  "text " . "placeholder = "  . "'". $row[$i] . "'" . "/>" . "<br>";
-       				   		// }
-       				   		
-       				   	 	mysqli_free_result($result);
-       				
-       				
-       				}
-       				$conn->close();
-       		    ?>
+		    <?php
+		    	if (isset($_POST["subUpdate"]))
+		    	{
+		    		require_once 'login.php'; 
+		    		$conn = new mysqli($hn, $un, $pw, $db);
+		    		if ($conn->connect_error)	die($conn->connect_error);
+
+		    		// $_SESSION['username'] = $_POST["username"];
+		    		// $_SESSION['email'] = $_POST["email"];
+		    		// $_SESSION['telephone'] = $_POST["telephone"];
+		    		// $_SESSION['institution'] = $_POST["institution"];
+		    		// $_SESSION['institution_country'] = $_POST["institution_country"];
+		    		// $_SESSION['address'] = $_POST["address"];
+		    		// $_SESSION['city'] = $_POST["city"];
+		    		// $_SESSION['state'] = $_POST["state"];
+		    		// $_SESSION['postal_code'] = $_POST["postal_code"];
+		    		// $_SESSION['country'] = $_POST["country"];
+
+
+		    		if(isset($_SESSION['name']))
+					{
+					   $username = $_SESSION['name']; 
+					}
+
+		    		// $address = "Pen";
+
+		    		// $sql = "UPDATE user SET Name='Doe' WHERE Address='$address'";
+
+		    		$sql = "UPDATE user SET Name = '".$_POST["username"]."', Email = '".$_POST["email"]."',                   					 Telephone = '".$_POST["telephone"]."', Institution = '".$_POST["institution"]."', 
+		    								InstitutionCountry = '".$_POST["institution_country"]."', 
+		  									Address = '".$_POST["address"]."', City = '".$_POST["city"]."', 
+		    								State = '".$_POST["state"]."', PostalCode = '".$_POST["postal_code"]."', 
+		    								Country = '".$_POST["country"]."' WHERE Name = '$username'";
+		    		
+		    		if ($_POST["username"] != $_SESSION['name'])
+		    		{
+		    			$_SESSION['name'] = $_POST["username"];
+		    		}
+		    		
+
+					if ($conn->query($sql) === TRUE) 
+					{
+						echo "<script type= 'text/javascript'>alert('Your info updated successfully');</script>";
+						// header("Location : reg3_3.php");
+					} else 
+					{
+						echo "<script type= 'text/javascript'>alert('Error: " . $sql . "<br>" . $conn->error."');</script>";
+					}
+
+		    		$conn->close();
+		    	}
+		    ?>
 
 
        	</div>
-       	<br>
-       	<form method="post" action="">
-       		<input style="margin-left: 13%;"  type="submit" name="subUpdate" value="Update" /> 
-       	</form >
-	    
-	    <!-- <div style="padding-left: 50%;">
-	    <p> Update Your Information  </p>
-
-
-
-	    <form style="padding-left: 7.5%;" method="post" action="">
-	    	<label>Name :</label> <label style="padding-left: 25%;">E-mail :</label> <br> <input type="text" name="name" placeholder="name" />
-	    	<input style="margin-left: 5%;" type="text" name="e-mail" placeholder="e-mail" /><br><br>
-	    	<label>Telephone :</label> <label style="padding-left: 20%;">Institution :</label> <br> <input type="text" name="telephone" placeholder="telephone" />
-	    	<input style="margin-left: 5%;" type="text" name="institution" placeholder="institution" /><br><br>
-	    	<label>Institution Country :</label> <label style="padding-left: 10%;">Address :</label> <br> <input type="text" name="instCountry" placeholder="institution country" />
-	    	<input style="margin-left: 5%;" type="text" name="address" placeholder="address" /><br><br>
-	    	<label>City :</label> <label style="padding-left: 27%;">State :</label> <br> <input type="text" name="city" placeholder="city" />
-	    	<input style="margin-left: 5%;" type="text" name="state" placeholder="state" /><br><br>
-	    	<label>Postal Code :</label> <label style="padding-left: 18%;">Country :</label> <br> <input type="text" name="postalCode" placeholder="postal code" />
-	    	<input style="margin-left: 5%;" type="text" name="country" placeholder="country" /><br><br>
-
-	    	<label style="padding-left: 8%;">Password:</label><br>
-	    	<input  style="margin-left: 8%;" type="password" name="pass" placeholder="password" />  <br><br>
-	    	<input  type="submit" name="submit" value="Update" /> 
-	    </form>
-	    </div> -->
-
-
-	    <br> <br>
-	    <div>
-    	    
-
-	    </div>
-	   
-
-
-
-	   
-
-	    <br> <br> 
-
-		<!-- <div style="padding-left: 5.5%;">
-			<button class="button listButton"> Update </button>
-		</div> -->
 
 	</body>
 </html>

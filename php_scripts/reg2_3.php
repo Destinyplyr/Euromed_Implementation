@@ -166,7 +166,7 @@
 
 	    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
-	    <div style="padding-left: 38%; padding-bottom: 10px;"  id="media">
+	    <div style="padding-left: 38%; padding-bottom: 10px; margin-bottom: 0%;"  id="media">
 	      <a href="http://www.w3schools.com">
 	      <img  alt="facebook" src="../images/_facebookIcon.png" width="100" height="100">
 	      </a>

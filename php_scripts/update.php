@@ -1,116 +1,56 @@
-<?php 
-	session_start();
-	include('login.php'); 
-	$conn = new mysqli($hn, $un, $pw, $db);
-	if ($conn->connect_error) die($conn->connect_error);
-	$error = "";
-	if(isset($_POST["subUpdate"]))
-	{
-	    //Define $username and $password
-	    if(empty($_POST["po"]))
-	    {
-	      $echo = "Both fields are required.";
-	      header("Location: faq.php");
-	    }
-	    else
-	    {
+    <?php
+    	if (isset($_POST["subUpdate"]))
+    	{
+    		require_once 'login.php'; 
+    		$conn = new mysqli($hn, $un, $pw, $db);
+    		if ($conn->connect_error)	die($conn->connect_error);
 
-		  	$username=$_POST['Name'];
-		  	header("Location: mainSample.php");
-
-	    }
-	 //    $mail=$_POST['E-mail'];
-	 //    $telephone=$_POST['Telephone'];
-	 //    $institution=$_POST['Institution'];
-	 //    $institution_country=$_POST['Institution Country'];
-	 //    $address=$_POST['Address'];
-	 //    $city=$_POST['City'];
-	 //    $state=$_POST['State'];
-	 //    $postal_code=$_POST['Postal Code'];
-	 //    $country=$_POST['Country'];
-		// $password=$_SESSION['pass'];
-
-		// echo '$state';
-	    //Check username and password from database
-	    // $query=  "UPDATE user SET Name='Vasilis' WHERE Address='$address'";
-	    // $result = $conn->query($query);
-	    // if (!$result) die ($conn->error);
-	    // $rows = $result->num_rows;
-
-	    // //If username and password exist in our database then create a session. Otherwise echo error.
-	    // if($rows == 1)
-	    // {
-	    //    //$_SESSION['name'] = $username; // Initializing Session
-	    //    //echo "<li> <a>  Hello user, " .  $_SESSION['name'] . "</a> </li>";
-	      
-	    //   if(isset($_POST['name']))
-	    //   {
-	    //       $_SESSION['name']= $username;
-	    //       // echo "<li> <a>  Hello user, " .  $_SESSION['name'] . "</a> </li>";
-	    //   }
-	                  
-	    //   //echo "heloo,ool". '<br>';
-
-	    //   // for ($i=0; $i < $rows; ++$i) 
-	    //   // {
-	    //   //   $result->data_seek($i);
-	    //   //   echo "User's name : "  . $result->fetch_assoc()['Name'] . '<br>'; 
-	    //   //   $result->data_seek($i);
-	    //   //   echo "User's e-mal : "  . $result->fetch_assoc()['E-mail']  . '<br>'; 
-	    //   //   $result->data_seek($i);
-	    //   //   echo "User's state : "  . $result->fetch_assoc()['State'] . '<br>'; 
-	    //   // }
-	    // }
-	    // else
-	    // {
-	    //   $error = "Incorrect username or password.";
-	    // }
-	  
-	}
-
-	//session_destroy();
+    		$_SESSION['username'] = $_POST["username"];
+    		$_SESSION['email'] = $_POST["email"];
+    		$_SESSION['telephone'] = $_POST["telephone"];
+    		$_SESSION['institution'] = $_POST["institution"];
+    		$_SESSION['institution_country'] = $_POST["institution_country"];
+    		$_SESSION['address'] = $_POST["address"];
+    		$_SESSION['city'] = $_POST["city"];
+    		$_SESSION['state'] = $_POST["state"];
+    		$_SESSION['postal_code'] = $_POST["postal_code"];
+    		$_SESSION['country'] = $_POST["country"];
 
 
+    		if(isset($_SESSION['name']))
+			{
+			   $username = $_SESSION['name']; 
+			}
 
+    		// $address = "Pen";
 
+    		// $sql = "UPDATE user SET Name='Doe' WHERE Address='$address'";
 
+    		$sql = "UPDATE user SET Name = '".$_POST["username"]."', Email = '".$_POST["email"]."',                   					 Telephone = '".$_POST["telephone"]."', Institution = '".$_POST["institution"]."', 
+    								InstitutionCountry = '".$_POST["institution_country"]."', 
+  									Address = '".$_POST["address"]."', City = '".$_POST["city"]."', 
+    								State = '".$_POST["state"]."', PostalCode = '".$_POST["postal_code"]."', 
+    								Country = '".$_POST["country"]."' WHERE Name = '$username'";
+    		
+    		if ($_POST["username"] != $_SESSION['name'])
+    		{
+    			$_SESSION['name'] = $_POST["username"];
+    		}
+    		
 
-  	  //    $username=$_POST['Name'];
-   //    $mail=$_POST['E-mail'];
-   //    $telephone=$_POST['Telephone'];
-   //    $institution=$_POST['Institution'];
-   //    $institution_country=$_POST['Institution Country'];
-   //    $address=$_POST['Address'];
-   //    $city=$_POST['City'];
-   //    $state=$_POST['State'];
-   //    $postal_code=$_POST['Postal Code'];
-   //    $country=$_POST['Country'];
-	  // $password=$_SESSION['pass'];
+			if ($conn->query($sql) === TRUE) 
+			{
+				echo "<script type= 'text/javascript'>alert('Your info updated successfully');</script>";
+				// header("Location : reg3_3.php");
+			} else 
+			{
+				echo "<script type= 'text/javascript'>alert('Error: " . $sql . "<br>" . $conn->error."');</script>";
+			}
 
-	  // $address = "Pen";
-	  // $sql = "UPDATE user SET Name='Vasilis' WHERE Address='$address'";
-      // $query=  "UPDATE user SET Name = ' $username', E-mail = '$mail', Telephone = '$telephone', 
-      // Institution = '$institution', Institution Country = '$institution_country', Address = '$address',
-      // City = '$city', State = '$state', Postal Code = '$postal_code', Country = '$country' WHERE Password = '$password'";
-      // $result = $conn->query($query);
-      // if (!$result) die ($conn->error);
- //      if ($conn->query($sql) === TRUE) 
- //      {
-	//     echo "Record updated successfully";
-	//   } 
-	//   else 
-	//   {
-	//   	echo "Error updating record: " . $conn->error;
-	//   }
-	    
-
-	// $result->close();
-		// $conn->close();
-		
- 
-?>
-
-
-
-
-
+    		$conn->close();
+    	}
+    	else
+    	{
+    		$_SESSION['username'] = $_SESSION["name"];
+    	}
+    ?>

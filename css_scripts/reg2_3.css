@@ -342,18 +342,14 @@ input::-webkit-input-placeholder
    /* width: 100%;
    padding: 12px 20px;
    margin: 8px 0; */
+   color: darkorange;
    position: absolute;
-   background-color: #4CAF50; /* Green */
+   background-color: inherit; /* Green */
+   padding: 37% 60px 40px;
+   cursor: pointer; 
+   font-size: 40px;
    border: none;
-   color: white;
-   font-family: Lato;
-   padding: 20px 40px 20px;
-   text-align: center;
-   text-decoration: none;
-   display: inline-block;
-   font-size: 16px;
-   margin: 35%   30px;
-   cursor: pointer;
-/*   border: 1px solid darkorange;
-   outline-offset: 2px;*/
+   outline: none;
+   text-shadow: 50px;   
+   /* border-collapse: collapse; */
 }
