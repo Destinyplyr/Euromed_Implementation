@@ -69,8 +69,9 @@ function updateInfo()
 
 function insertData()
 {
-	var r = confirm("Are you sure you want to insert?");
-    if (r) {
+	var r = confirm("Are you sure you want to proceed?");
+    if (r) 
+    {
        window.location.href = 'insert.php'
     }
 }

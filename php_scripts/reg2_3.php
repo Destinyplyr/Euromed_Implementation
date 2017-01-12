@@ -90,9 +90,9 @@
 
 		<form style="padding-left: 7.5%;" method="post" action="">
 			<label>Name :</label> <label style="padding-left: 15.5%;">E-mail :</label> <label style="padding-left: 15.5%;"> Password : </label> <br> 
-			<input type="text" name="name" placeholder="name" />
-			<input style="margin-left: 5%;" type="text" name="e-mail" placeholder="e-mail" />
-			<input style="margin-left: 5%;" type="text" name="password" placeholder="password" /> <br> <br>
+			<input type="text" name="username" placeholder="name" />
+			<input style="margin-left: 5%;" type="text" name="email" placeholder="email" />
+			<input style="margin-left: 5%;" type="password" name="password" placeholder="password" /> <br> <br>
 			<label> Telephone : </label> <label style="padding-left: 13%;"> Address :</label> <label style="padding-left: 14.5%;"> City :</label>  <label style="padding-left: 16.5%;"> Postal Code : </label> <br>
 			<input type="text" name="telephone" placeholder="telephone" />
 			<input style="margin-left: 5%;" type="text" name="address" placeholder="address" />
@@ -101,20 +101,21 @@
 			<label> Institution : </label>  <label style="padding-left: 13%;"> State:</label> <label style="padding-left: 16.5%;"> Institution Country :</label> <label style="padding-left: 8%;"> Country : </label> <br> 
 			<input style="margin-left: 0%;" type="text" name="institution" placeholder="institution" />
 			<input style="margin-left: 5%;" type="text" name="state" placeholder="state" />
-			<select style="margin-left: 5%; width: 175px;" class="reasons">
+			<select name="institution_country" style="margin-left: 5%; width: 175px;" class="reasons">
 	   		  <option value="0"> List of countries </option>
-	   		  <option value="1"> Cyprus </option>
-	   		  <option value="2"> Greece </option>
-	   		  <option value="3"> USA </option>
-	   		  <option value="3"> UK </option>
+	   		  <option value="Cyprus"> Cyprus </option>
+	   		  <option value="Greece"> Greece </option>
+	   		  <option value="USA"> USA </option>
+	   		  <option value="UK"> UK </option>
 	   		</select>
-			<select style="margin-left: 5%; width: 175px;" class="reasons">
+			<select name="country" style="margin-left: 5%; width: 175px;" class="reasons">
 	   		  <option value="0"> List of countries </option>
-	   		  <option value="1"> Cyprus </option>
-	   		  <option value="2"> Greece </option>
-	   		  <option value="3"> USA </option>
-	   		  <option value="3"> UK </option>
+	   		  <option value="Cyprus"> Cyprus </option>
+	   		  <option value="Greece"> Greece </option>
+	   		  <option value="USA"> USA </option>
+	   		  <option value="UK"> UK </option>
 	   		</select>
+	   		<input class="regiSubmit" type="submit" value="Proceed" name="submitRegi"/><br />
 		</form>
 		</div>
 
@@ -138,7 +139,7 @@
 
 		<div style="padding-left: 7%;">
 
-	    <form style="padding-left: 0%;" method="post" action="">
+	    <form style="padding-left: 0%;" method="" action="">
 	    	<label>Name :</label> <label style="padding-left: 15%;"> Telephone :</label> <br> <input type="text" name="name" placeholder="name" />
 	    	<input style="margin-left: 5%;" type="text" name="e-mail" placeholder="telephone" /><br><br>
 	    	<label>Address :</label> <label style="padding-left: 13.5%;">City :</label> <br> <input type="text" name="telephone" placeholder="address" />
@@ -156,12 +157,7 @@
 	    </div>
 
 
-	    <br> <br>   
-
-	    <div id="getTickets"> 
-	      <button onclick="insertData();" class="button listButton"> Proceed </button>
-	    </div>
-
+	    <br> 
 	    <br>   <br>
 
 	    <hr style="width: 85%">
@@ -182,6 +178,38 @@
 	      <img  alt="instagram" src="../images/_instagramIcon.png" width="100" height="100">
 	      </a>
 	    </div>
+
+
+	    <?php
+	    	if (isset($_POST["submitRegi"]))
+	    	{
+	    		require_once 'login.php'; 
+	    		$conn = new mysqli($hn, $un, $pw, $db);
+	    		if ($conn->connect_error)	die($conn->connect_error);
+
+	    		// $address = "Pen";
+
+	    		// $sql = "UPDATE user SET Name='Doe' WHERE Address='$address'";
+
+	    		$sql = "INSERT INTO user (Name, Email, Telephone, Institution, InstitutionCountry, Address, City, 
+	    		State, PostalCode, Country, Password) VALUES ('".$_POST["username"]."', '".$_POST["email"]."', 
+	    		'".$_POST["telephone"]."', '".$_POST["institution"]."', '".$_POST["institution_country"]."', 
+	    		'".$_POST["address"]."', '".$_POST["city"]."', '".$_POST["state"]."', '".$_POST["postal_code"]."', 
+	    		'".$_POST["country"]."', '".$_POST["password"]."')";
+
+
+				if ($conn->query($sql) === TRUE) 
+				{
+					echo "<script type= 'text/javascript'>alert('Your info submitted successfully');</script>";
+					// header("Location : reg3_3.php");
+				} else 
+				{
+					echo "<script type= 'text/javascript'>alert('Error: " . $sql . "<br>" . $conn->error."');</script>";
+				}
+
+	    		$conn->close();
+	    	}
+	    ?>
 
 	</body>
 

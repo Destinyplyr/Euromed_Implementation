@@ -326,3 +326,34 @@ li.dropdown
     color : black;
     font-size: 15px;
 }   
+
+
+
+
+input::-webkit-input-placeholder 
+{
+    color: white;
+    font-size: 15px;
+}
+
+
+.regiSubmit 
+{
+   /* width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0; */
+   position: absolute;
+   background-color: #4CAF50; /* Green */
+   border: none;
+   color: white;
+   font-family: Lato;
+   padding: 20px 40px 20px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 16px;
+   margin: 35%   30px;
+   cursor: pointer;
+/*   border: 1px solid darkorange;
+   outline-offset: 2px;*/
+}
