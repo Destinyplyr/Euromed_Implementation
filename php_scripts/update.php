@@ -7,7 +7,7 @@
 	if(isset($_POST["subUpdate"]))
 	{
 	    //Define $username and $password
-	    if(empty($_POST["Name"]))
+	    if(empty($_POST["po"]))
 	    {
 	      $echo = "Both fields are required.";
 	      header("Location: faq.php");
