@@ -65,3 +65,12 @@ function updateInfo()
     }
     window.location.reload();
 }
+
+
+function insertData()
+{
+	var r = confirm("Are you sure you want to insert?");
+    if (r) {
+       window.location.href = 'insert.php'
+    }
+}

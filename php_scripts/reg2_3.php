@@ -10,7 +10,8 @@
 	    <title> Euromed 2016 | Registration 2/3 </title>
 	    <meta charset="utf-8">
 	    <link rel="stylesheet" type="text/css" href ="../css_scripts/reg2_3.css">
-	    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">    
+	    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> 
+	    <script type="text/javascript" src="../js_scripts/testFrame.js"></script>          
 	    <!-- <link rel="stylesheet" type="text/css" href ="../css_scripts/tdButton.css"> -->
 	</head>
 
@@ -30,8 +31,8 @@
 	      </div>
 
 
-	      <li><a href="#contact"> Contact </a></li>
-	      <li> <a href="#faq"> FAQ </a></li>
+	      <li><a href="contact.php"> Contact </a></li>
+	      <li> <a href="faq.php"> FAQ </a></li>
 	      <?php 
 	       	if(isset($_SESSION['name']))
 	        {
@@ -63,7 +64,7 @@
 	        </div>
 	      </li>
 	      <li><a href="#venue"> Venue </a></li>
-	      <li><a href="#prev_events"> Previous Events </a></li>
+	      <li><a href="previous_events.php"> Previous Events </a></li>
 	      <li class="tickets"><a href="#tickets"> TICKETS </a></li>
 	    </ul>
 
@@ -158,7 +159,7 @@
 	    <br> <br>   
 
 	    <div id="getTickets"> 
-	      <button class="button listButton"> Proceed </button>
+	      <button onclick="insertData();" class="button listButton"> Proceed </button>
 	    </div>
 
 	    <br>   <br>

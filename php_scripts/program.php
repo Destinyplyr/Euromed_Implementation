@@ -31,8 +31,8 @@
 	      </div>
 
 
-	      <li><a href="#contact"> Contact </a></li>
-	      <li> <a href="#faq"> FAQ </a></li>
+	      <li><a href="contact.php"> Contact </a></li>
+	      <li> <a href="faq.php"> FAQ </a></li>
 	      <?php 
 	       	if(isset($_SESSION['name']))
 	        {
@@ -64,7 +64,7 @@
 	        </div>
 	      </li>
 	      <li><a href="#venue"> Venue </a></li>
-	      <li><a href="#prev_events"> Previous Events </a></li>
+	      <li><a href="previous_events.php"> Previous Events </a></li>
 	      <li class="tickets"><a href="#tickets"> TICKETS </a></li>
 	    </ul>
 
