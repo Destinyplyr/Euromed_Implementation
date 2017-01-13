@@ -98,33 +98,27 @@
 				
 				if(isset($_SESSION['name']) || isset($_SESSION['username']))
 				{
-				   $username = $_SESSION['name']; 
-				   $query = "SELECT * FROM user WHERE Name = '$username'";
 
-				    if ($result=mysqli_query($conn,$query))
-				   	{
-				   		$row=mysqli_fetch_row($result);
 			?>
 			<form method="post" action="">
-			   <label> Name </label> <input type="text" name="username" placeholder= <?php echo $row[0] ?> /> <br>
-			   <label> E-mail </label> <input type="text" name="email" placeholder= <?php echo $row[1] 	?> /> <br>
-			   <label> Telephone </label> <input type="text" name="telephone" placeholder= <?php echo $row[2] ?> /> <br>
-			   <label> Institution </label> <input type="text" name="institution" placeholder= <?php echo $row[3] ?> /> <br>
+			   <label> Name </label> <input type="text" name="username" placeholder= <?php echo $_SESSION['username'] ?> /> <br>
+			   <label> E-mail </label> <input type="text" name="email" placeholder= <?php echo $_SESSION['email'] ?> /> <br>
+			   <label> Telephone </label> <input type="text" name="telephone" placeholder= <?php echo $_SESSION['telephone'] ?> /> <br>
+			   <label> Institution </label> <input type="text" name="institution" placeholder= <?php echo $_SESSION['institution'] ?> /> <br>
 			   <label> Institution Country </label> <input type="text" name="institution_country" 
-			   placeholder= <?php echo $row[4] ?> /> <br>
-			   <label> Address </label> <input type="text" name="address" placeholder= <?php echo $row[5] ?> /> <br>
-			   <label> City </label> <input type="text" name="city" placeholder= <?php echo $row[6] ?> /> <br>
-			   <label> State </label> <input type="text" name="state" placeholder= <?php echo $row[7] ?> /> <br>
-			   <label> Postal Code </label> <input type="text" name="postal_code" placeholder= <?php echo $row[8] ?> /> <br>
-			   <label> Country </label> <input type="text" name="country" placeholder= <?php echo $row[9] ?> /> <br> <br>
+			   placeholder= <?php echo $_SESSION['institution_country'] ?> /> <br>
+			   <label> Address </label> <input type="text" name="address" placeholder= <?php echo $_SESSION['address'] ?> /> <br>
+			   <label> City </label> <input type="text" name="city" placeholder= <?php echo $_SESSION['city'] ?> /> <br>
+			   <label> State </label> <input type="text" name="state" placeholder= <?php echo $_SESSION['state'] ?> /> <br>
+			   <label> Postal Code </label> <input type="text" name="postal_code" placeholder= <?php echo $_SESSION['postal_code'] ?> /> <br>
+			   <label> Country </label> <input type="text" name="country" placeholder= <?php echo $_SESSION['country'] ?> /> <br> <br>
 			   <input style="margin-left: 7%;"  type="submit" name="subUpdate" value="Update" /> <br> <br>
 			</form >
        				   
 		   <?php
 
-				   	}
-				   		
-				   	mysqli_free_result($result);
+				   	
+				 
 				
 				
 				}
@@ -138,6 +132,59 @@
 		    		require_once 'login.php'; 
 		    		$conn = new mysqli($hn, $un, $pw, $db);
 		    		if ($conn->connect_error)	die($conn->connect_error);
+
+		    		if (isset($_POST['username']))
+		    		{
+		    			$_SESSION['username'] = $_POST['username'];
+		    		}
+
+		    		if (isset($_POST['email']))
+		    		{
+		    			$_SESSION['email'] = $_POST['email'];
+		    		}
+
+		    		if (isset($_POST['telephone']))
+		    		{
+		    			$_SESSION['telephone'] = $_POST['telephone'];
+		    		}
+
+		    		if (isset($_POST['institution']))
+		    		{
+		    			$_SESSION['institution'] = $_POST['institution'];
+		    		}
+
+		    		if (isset($_POST['institution_country']))
+		    		{
+		    			$_SESSION['institution_country'] = $_POST['institution_country'];
+		    		}
+
+		    		if (isset($_POST['address']))
+		    		{
+		    			$_SESSION['address'] = $_POST['address'];
+		    		}
+
+		    		if (isset($_POST['city']))
+		    		{
+		    			$_SESSION['city'] = $_POST['city'];
+		    		}
+
+		    		if (isset($_POST['state']))
+		    		{
+		    			$_SESSION['state'] = $_POST['state'];
+		    		}	
+
+		    		if (isset($_POST['postal_code']))
+		    		{
+		    			$_SESSION['postal_code'] = $_POST['postal_code'];
+		    		}
+
+		    		if (isset($_POST['country']))
+		    		{
+		    			$_SESSION['country'] = $_POST['country'];
+		    		}
+
+
+
 
 		    		// $_SESSION['username'] = $_POST["username"];
 		    		// $_SESSION['email'] = $_POST["email"];
@@ -160,17 +207,14 @@
 
 		    		// $sql = "UPDATE user SET Name='Doe' WHERE Address='$address'";
 
-		    		$sql = "UPDATE user SET Name = '".$_POST["username"]."', Email = '".$_POST["email"]."',                   					 Telephone = '".$_POST["telephone"]."', Institution = '".$_POST["institution"]."', 
-		    								InstitutionCountry = '".$_POST["institution_country"]."', 
-		  									Address = '".$_POST["address"]."', City = '".$_POST["city"]."', 
-		    								State = '".$_POST["state"]."', PostalCode = '".$_POST["postal_code"]."', 
-		    								Country = '".$_POST["country"]."' WHERE Name = '$username'";
-		    		
-		    		if ($_POST["username"] != $_SESSION['name'])
-		    		{
-		    			$_SESSION['name'] = $_POST["username"];
-		    		}
-		    		
+		    		// $sql = "UPDATE user SET Name = '".$_POST["username"]."', Email = '".$_POST["email"]."',                   					 Telephone = '".$_POST["telephone"]."', Institution = '".$_POST["institution"]."', 
+		    		// 						InstitutionCountry = '".$_POST["institution_country"]."', 
+		  				// 					Address = '".$_POST["address"]."', City = '".$_POST["city"]."', 
+		    		// 						State = '".$_POST["state"]."', PostalCode = '".$_POST["postal_code"]."', 
+		    		// 						Country = '".$_POST["country"]."' WHERE Name = '$username'";
+
+		    		$sql = "UPDATE user SET Name = '".$_POST["username"]."' WHERE Name = '$username'";
+
 
 					if ($conn->query($sql) === TRUE) 
 					{

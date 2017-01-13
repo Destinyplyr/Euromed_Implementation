@@ -198,6 +198,18 @@
 	    		'".$_POST["country"]."', '".$_POST["password"]."')";
 
 
+	    		$_SESSION['username'] = $_POST["username"];
+	    		$_SESSION['email'] = $_POST["email"];
+	    		$_SESSION['telephone'] = $_POST["telephone"];
+	    		$_SESSION['institution'] = $_POST["institution"];
+	    		$_SESSION['institution_country'] = $_POST["institution_country"];
+	    		$_SESSION['address'] = $_POST["address"];
+	    		$_SESSION['city'] = $_POST["city"];
+	    		$_SESSION['state'] = $_POST["state"];
+	    		$_SESSION['postal_code'] = $_POST["postal_code"];
+	    		$_SESSION['country'] = $_POST["country"];
+	    		
+
 				if ($conn->query($sql) === TRUE) 
 				{
 					echo "<script type= 'text/javascript'>alert('Your info submitted successfully');</script>";
