@@ -345,7 +345,7 @@ input::-webkit-input-placeholder
    color: darkorange;
    position: absolute;
    background-color: inherit; /* Green */
-   padding: 37% 60px 40px;
+   padding: 40% 0px 40px;
    cursor: pointer; 
    font-size: 40px;
    border: none;

@@ -83,3 +83,10 @@ function goToAnchor(anchor)
   document.location = loc + '#' + anchor;
   return false;
 }
+
+
+function showPrice()
+{
+	var x = document.getElementById("priceSelector").value;
+	document.getElementById("price").innerHTML = "Total cost : " + x;
+}

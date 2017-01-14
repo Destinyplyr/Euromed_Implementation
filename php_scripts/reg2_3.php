@@ -89,38 +89,47 @@
 
 
 		<form style="padding-left: 7.5%;" method="post" action="">
-			<label>Name :</label> <label style="padding-left: 15.5%;">E-mail :</label> <label style="padding-left: 15.5%;"> Password : </label> <br> 
-			<input type="text" name="username" placeholder="name" />
-			<input style="margin-left: 5%;" type="text" name="email" placeholder="email" />
-			<input style="margin-left: 5%;" type="password" name="password" placeholder="password" /> <br> <br>
-			<label> Telephone : </label> <label style="padding-left: 13%;"> Address :</label> <label style="padding-left: 14.5%;"> City :</label>  <label style="padding-left: 16.5%;"> Postal Code : </label> <br>
-			<input type="text" name="telephone" placeholder="telephone" />
-			<input style="margin-left: 5%;" type="text" name="address" placeholder="address" />
-			<input style="margin-left: 5%;" type="text" name="city" placeholder="city" />
-			<input style="margin-left: 5%;" type="text" name="postal_code" placeholder="postal_code" /> <br> <br>
-			<label> Institution : </label>  <label style="padding-left: 13%;"> State:</label> <label style="padding-left: 16.5%;"> Institution Country :</label> <label style="padding-left: 8%;"> Country : </label> <br> 
-			<input style="margin-left: 0%;" type="text" name="institution" placeholder="institution" />
-			<input style="margin-left: 5%;" type="text" name="state" placeholder="state" />
-			<select name="institution_country" style="margin-left: 5%; width: 175px;" class="reasons">
-	   		  <option value="0"> List of countries </option>
+			<label>Name :</label> <label style="padding-left: 15.5%;">E-mail :</label> <label style="padding-left: 15.5%;"> Password : </label> 
+			<label style="padding-left: 12.5%;"> Role selection for pricing : </label> <br> 
+			<input type="text" name="username" placeholder="name" required />
+			<input style="margin-left: 5%;" type="text" name="email" placeholder="email" required/>
+			<input style="margin-left: 5%;" type="password" name="password" placeholder="password" required/>
+			<select required id="priceSelector" onchange="showPrice();" name="country" style="margin-left: 5%; width: 175px;" class="reasons" >
+	   		  <option value=""> None </option>
+	   		  <option value="140&euro;"> Visitor-Early Bird </option>
+	   		  <option value="30&euro;"> Student-Early Bird </option>
+	   		  <option value="You will be contacted by e-mal."> Exhibitor </option>
+	   		  <option value="20&euro;"> Speaker </option>
+	   		</select> <br> <br>
+			<label> Telephone : </label> <label style="padding-left: 13%;"> Address :</label> <label style="padding-left: 14.5%;"> City :</label>  <label style="padding-left: 16%;"> Postal Code : </label> <br>
+			<input type="text" name="telephone" placeholder="telephone" required/>
+			<input style="margin-left: 5%;" type="text" name="address" placeholder="address" required/>
+			<input style="margin-left: 5%;" type="text" name="city" placeholder="city" required/>
+			<input style="margin-left: 5%;" type="text" name="postal_code" placeholder="postal_code" required/> <br> <br>
+			<label> Institution : </label>  <label style="padding-left: 13%;"> State:</label> <label style="padding-left: 15.5%;"> Institution Country :</label> <label style="padding-left: 8.5%;"> Country : </label> <br> 
+			<input style="margin-left: 0%;" type="text" name="institution" placeholder="institution" required/>
+			<input style="margin-left: 5%;" type="text" name="state" placeholder="state" required/>
+			<select required name="institution_country" style="margin-left: 5%; width: 175px;" class="reasons" >
+	   		  <option value=""> None </option>
 	   		  <option value="Cyprus"> Cyprus </option>
 	   		  <option value="Greece"> Greece </option>
 	   		  <option value="USA"> USA </option>
 	   		  <option value="UK"> UK </option>
 	   		</select>
-			<select name="country" style="margin-left: 5%; width: 175px;" class="reasons">
-	   		  <option value="0"> List of countries </option>
+			<select required name="country" style="margin-left: 3.8%; width: 175px;" class="reasons" >
+	   		  <option value=""> None </option>
 	   		  <option value="Cyprus"> Cyprus </option>
 	   		  <option value="Greece"> Greece </option>
 	   		  <option value="USA"> USA </option>
 	   		  <option value="UK"> UK </option>
 	   		</select>
-	   		<input class="regiSubmit" type="submit" value="Proceed" name="submitRegi"/><br />
+	   		<input class="regiSubmit" type="submit" value="Proceed" name="submitRegi" required/><br />
 		</form>
 		</div>
 
-		<br> <br>
 
+		<br> <br>
+		<p style="padding-left: 70%; color:darkorange; font-size: 25px; " id="price"></p>
 
 		<hr style="width: 85%">
 
@@ -155,10 +164,12 @@
 	   		</select><br><br>
 	    </form>
 	    </div>
+	     
+	    <br>
+
+	   
 
 
-	    <br> 
-	    <br>   <br>
 
 	    <hr style="width: 85%">
 
