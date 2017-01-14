@@ -129,7 +129,7 @@
 
 
 		<br> <br>
-		<p style="padding-left: 70%; color:darkorange; font-size: 25px; " id="price"></p>
+		<p style="padding-left: 50%; color:darkorange; font-size: 25px; " id="price"></p>
 
 		<hr style="width: 85%">
 
