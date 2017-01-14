@@ -54,3 +54,29 @@ function showHide(category)
 		}
 	}
 }
+
+
+function showThem(speaksCat)
+{
+	if (speaksCat == 1)
+	{
+		var x = document.getElementById('hid');
+	}
+	if (speaksCat == 2)
+	{
+		var x = document.getElementById('otherhid');
+	}
+	if (speaksCat == 3)
+	{
+		var x = document.getElementById('workhid');
+	}
+	
+    if (x.style.display === 'none') 
+    {
+        x.style.display = 'block';
+    } 
+    else 
+    {
+        x.style.display = 'none';
+    }
+}
