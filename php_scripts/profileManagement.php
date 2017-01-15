@@ -1,12 +1,5 @@
 <?php
 	session_start();
-	// if ((isset($_SESSION['name']) != '')) 
-	// {
-	// 	echo $_SESSION['name'];
-	// 	//header("Location: mainSample.php");
-	// }
-	//echo "myefmtmymy";
-	//error_reporting(-1);
 ?>
 
 
@@ -99,6 +92,7 @@
 				if(isset($_SESSION['name']))
    				{
    					$username = $_SESSION['name']; 
+   					//echo "Session name before output form : " . $username;
    					$query = "SELECT * FROM user WHERE Name = '$username'";
    				    if ($result=mysqli_query($conn,$query))
    				   	{
@@ -120,25 +114,266 @@
 	   				</form >
    			<?php
    				   	}	
-   				   	mysqli_free_result($result);
+   				   	//mysqli_free_result($result);
    				}
-   				$conn->close();
+   				//$conn->close();
 			?>
 		</div>
 
 		<?php
-	    	if (isset($_POST["subUpdate"]))
-	    	{
-	    		require_once 'login.php'; 
-	    		$conn = new mysqli($hn, $un, $pw, $db);
-	    		if ($conn->connect_error)	die($conn->connect_error);
+			if (isset($_POST['subUpdate']))
+			{
+				//echo "my dawg name before output form : " . $_SESSION['name'];
+				require_once 'login.php'; 
+		    	$conn = new mysqli($hn, $un, $pw, $db);
+		    	if ($conn->connect_error)	die($conn->connect_error);
+				
+				$username = $_SESSION['name'];
+		    	//setcookie('myname', '$username');
+
+				ini_set('display_errors',1);
+				error_reporting(E_ALL);
+
+		        if(mysqli_connect_errno())
+		        {
+		            echo mysqli_connect_error();
+		        }
+
+		        if (isset($_SESSION['name']))
+		        {
+		        	$name = $_SESSION['name'];
+		        	//echo "NEW NAME : " . $name;
+		        }
+
+		     	if (isset($_SESSION['email']))
+		     	{
+		     		$email = $_SESSION['email'];
+		     	}
+
+		     	if (isset($_SESSION['telephone']))
+		     	{
+		     		$telephone = $_SESSION['telephone'];
+		     	}
+
+		     	if (isset($_SESSION['institution']))
+		     	{
+		     		$institution = $_SESSION['institution'];
+		     	}
+
+		     	if (isset($_SESSION['institution_country']))
+		     	{
+		     		$institution_country = $_SESSION['institution_country'];
+		     	}
+
+		     	if (isset($_SESSION['address']))
+		     	{
+		     		$address = $_SESSION['address'];
+		     	}
+
+		     	if (isset($_SESSION['city']))
+		     	{
+		     		$city = $_SESSION['city'];
+		     	}
+
+		     	if (isset($_SESSION['state']))
+		     	{
+		     		$state = $_SESSION['state'];
+		     	}
+
+		     	if (isset($_SESSION['postalCode']))
+		     	{
+		     		$postalCode = $_SESSION['postalCode'];
+		     	}
+
+		     	if (isset($_SESSION['country']))
+		     	{
+		     		$country = $_SESSION['country'];
+		     	}
+
+		       	if (isset($_POST['name']))
+		       	{
+		       		$name = $_POST['name'];
+		       		//session_start();
+		       		$_SESSION['name'] = $username;
+		       		//setcookie('myname', '$name');
+		       	}
+
+		       	if (isset($_POST['email']))
+		       	{
+		       		$email = $_POST['email'];
+		       	}
+
+		       	if (isset($_POST['telephone']))
+		       	{
+		       		$telephone = $_POST['telephone'];
+		       	}
+
+		       	if (isset($_POST['institution']))
+		       	{
+		       		$institution = $_POST['institution'];
+		       	}
+
+		       	if (isset($_POST['institution_country']))
+		       	{
+		       		$institution_country = $_POST['institution_country'];
+		       	}
+
+		       	if (isset($_POST['address']))
+		       	{
+		       		$address = $_POST['address'];
+		       	}
+
+		       	if (isset($_POST['city']))
+		       	{
+		       		$city = $_POST['city'];
+		       	}
+
+		       	if (isset($_POST['state']))
+		       	{
+		       		$state = $_POST['state'];
+		       	}
+
+		       	if (isset($_POST['postalCode']))
+		       	{
+		       		$postalCode = $_POST['postalCode'];
+		       	}
+
+		       	if (isset($_POST['country']))
+		       	{
+		       		$country = $_POST['country'];
+		       	}
+
+
+		        $update_values = array();
+		        if($name != "")
+		            $update_values[] = "Name ='".$name."'";  
+		        if($email != "")
+		            $update_values[] = "Email='".$email."'";
+		        if($telephone != "")
+		            $update_values[] = "Telephone='".$telephone."'";
+		        if($institution != "")
+		            $update_values[] = "Institution='".$institution."'";
+		        if($institution_country != "")
+		            $update_values[] = "InstitutionCountry='".$institution_country."'";
+		        if($address != "")
+		            $update_values[] = "Address='".$address."'";
+		        if($city != "")
+		            $update_values[] = "City='".$city."'";
+		        if($state != "")
+		            $update_values[] = "State='".$state."'";
+		        if($postalCode != "")
+		            $update_values[] = "PostalCode='".$postalCode."'";
+		        if($country != "")
+		            $update_values[] = "Country='".$country."'";
+
+		        $update_values_imploded = implode(', ', $update_values);
+
+		        if(!empty($update_values) )
+	            {
+	                $q = "UPDATE user SET $update_values_imploded WHERE Name ='$username' ";
+	                $r = mysqli_query($conn, $q);
+	                mysqli_close($conn);
+	                if($r)
+	                {
+	                    echo "<br>Information stored successfully";
+	                    header("Location: profileManagement.php");
+	          
+	                }
+	            }
+	            // echo "<script type= 'text/javascript'> window.location.reload(); </script> ";
+	            // die();
+			}
+		
+
+
+
+
+
+
+
+
+
+
+
+
+	    	//if (isset($_POST["subUpdate"]))
+	    	//{
+	    		//require_once 'login.php'; 
+	    		//$conn = new mysqli($hn, $un, $pw, $db);
+	    		//if ($conn->connect_error)	die($conn->connect_error);
+
+
 	    	
-	    		
+	    		// $username = $_SESSION['name'];
+	    		// $semaphore = false;
+	    		// $query = "UPDATE user SET ";
+	    		// $fields = array('Name','Email','Telephone', 'Institution', 'InstitutionCountry', 'Address', 'City', 'State', 'PostalCode', 'Country');
+	    		// foreach ($fields as $field) {
+	    		//    if (isset($_POST[$field]) and !empty($_POST[$field])) 
+	    		//    {
+	    		//      $var = mysqli_real_escape_string($_POST[$field]);
+	    		//      $query .= uppercase($field) . " = '$var'";
+	    		//      $semaphore = true;
+	    		//    }
+	    		// }
 
-	    		$conn->close();
+	    		// if (isset($_POST['name']))
+	    		// {
+	    		// 	$_SESSION['name'] = $_POST['name'];
+	    		// }
+
+	    		// if ($semaphore) 
+	    		// {
+	    		//    $query .= " WHERE Name = '$username'";
+	    		//    mysqli_query($query);
+	    		// }
+
+
+
+	    // 		if ($_POST['name'] != " ")
+	    // 		{
+	    // 			if (isset($_SESSION['name']))
+	    // 			{
+	    // 				$name = $_POST['name'];
+		   //  			$prev_name = $_SESSION['name'];
+		   //  			$sql = "UPDATE user SET Name ='$name' WHERE Name = '$prev_name'";
+		   //  			if ($conn->query($sql) === TRUE) 
+					// 	{
+					// 		header("Location: profileManagement.php");
+					// 		// echo "<script type= 'text/javascript'>alert('Your info updated successfully');</script>";
+					// 		// echo "<script type= 'text/javascript'> window.location.reload(); </script> ";
+					// 	} 
+					// 	else 
+					// 	{
+					// 		echo "<script type= 'text/javascript'>alert('Error: " . $sql . "<br>" . $conn->error."');</script>";
+					// 	}
+		   //  			$_SESSION['name'] = $_POST['name'];
+	    // 			}
+	    // 		}
+
+
+	    // 		if ($_POST['email'] != "")
+	    // 		{
+    	// 			$email = $_POST['email'];
+	    // 			$prev_name = $_SESSION['name'];
+	    // 			$sql = "UPDATE user SET Email ='$email' WHERE Name = '$prev_name'";
+	    // 			if ($conn->query($sql) === TRUE) 
+					// {
+					// 	header("Location: profileManagement.php");
+					// 	// echo "<script type= 'text/javascript'>alert('Your info updated successfully');</script>";
+					// 	// echo "<script type= 'text/javascript'> window.location.reload(); </script> ";
+					// } 
+					// else 
+					// {
+					// 	echo "<script type= 'text/javascript'>alert('Error: " . $sql . "<br>" . $conn->error."');</script>";
+					// }
+	    // 			// $_SESSION['name'] = $_POST['name'];
+	    // 		}
+
+
+	    		//$conn->close();
 	  			
-	    	}
+	    	//}
 		?>
-
 	</body>
 </html>

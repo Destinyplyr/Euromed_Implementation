@@ -94,11 +94,11 @@
 			<input type="text" name="username" placeholder="name" required />
 			<input style="margin-left: 5%;" type="text" name="email" placeholder="email" required/>
 			<input style="margin-left: 5%;" type="password" name="password" placeholder="password" required/>
-			<select required id="priceSelector" onchange="showPrice();" name="country" style="margin-left: 5%; width: 175px;" class="reasons" >
+			<select required id="priceSelector" onchange="showPrice();" name="role" style="margin-left: 5%; width: 175px;" class="reasons" >
 	   		  <option value=""> None </option>
 	   		  <option value="140&euro;"> Visitor-Early Bird </option>
 	   		  <option value="30&euro;"> Student-Early Bird </option>
-	   		  <option value="You will be contacted by e-mal."> Exhibitor </option>
+	   		  <option value="You will be contacted by e-mail."> Exhibitor </option>
 	   		  <option value="20&euro;"> Speaker </option>
 	   		</select> <br> <br>
 			<label> Telephone : </label> <label style="padding-left: 13%;"> Address :</label> <label style="padding-left: 14.5%;"> City :</label>  <label style="padding-left: 16%;"> Postal Code : </label> <br>
@@ -203,10 +203,10 @@
 	    		// $sql = "UPDATE user SET Name='Doe' WHERE Address='$address'";
 
 	    		$sql = "INSERT INTO user (Name, Email, Telephone, Institution, InstitutionCountry, Address, City, 
-	    		State, PostalCode, Country, Password) VALUES ('".$_POST["username"]."', '".$_POST["email"]."', 
+	    		State, PostalCode, Country, Password, Role) VALUES ('".$_POST["username"]."', '".$_POST["email"]."', 
 	    		'".$_POST["telephone"]."', '".$_POST["institution"]."', '".$_POST["institution_country"]."', 
 	    		'".$_POST["address"]."', '".$_POST["city"]."', '".$_POST["state"]."', '".$_POST["postal_code"]."', 
-	    		'".$_POST["country"]."', '".$_POST["password"]."')";
+	    		'".$_POST["country"]."', '".$_POST["password"]."', '".$_POST["role"]."')";
 
 
 	    		$_SESSION['username'] = $_POST["username"];

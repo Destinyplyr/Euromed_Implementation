@@ -40,12 +40,6 @@
 
       <li><a href="contact.php"> Contact </a></li>
       <li> <a href="faq.php"> FAQ </a></li>
-      <?php 
-        if(isset($_SESSION['name']))
-        {
-          echo "<li> <a href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; 
-        }
-      ?> 
       <li style="padding-left: 15em" class="dropdown">
         <a href="javascript:void(0)" class="dropbtn"> Visitors </a>
         <div class="dropdown-content">
@@ -81,12 +75,32 @@
       <div id="caption"></div>
     </div>
   
+    <?php 
+      if(isset($_SESSION['name']))
+      {
+        echo "<p> 
+          <a style = 'color:darkorange; padding:5px; border:1px solid;' href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a> 
+        <span style = 'margin-left:75%;' >
+        
+        <button class='loginButton' onclick='showLogout();'> Logout </button>
+        </span>
+      </p>"; 
+      }
+    ?> 
 
-    <div style="padding-left: 93%;"> 
+    <?php  
+      if(!isset($_SESSION['name']))
+      {
+        echo "<span style = 'margin-left:90%;' > <button class='loginButton' onclick='showLogin();'> Login </button> </span>";
+      }
+    ?>
+
+    
+
+
       <!-- <button onclick="showMe();" class="button ticketButton"> Login </button> -->
-      <button class="loginButton" onclick="showLogin();"> Login </button>
-      <button class="loginButton" onclick="showLogout();"> Logout </button>
-    </div>
+      
+      
 
     <a href="mainSample.php">
        <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">

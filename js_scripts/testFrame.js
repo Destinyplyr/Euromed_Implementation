@@ -61,9 +61,9 @@ function updateInfo()
 {
 	var r = confirm("Are you sure you want to update your info?");
     if (r) {
-       window.location.href = 'update.php'
+       window.location.reload();
     }
-    window.location.reload();
+    
 }
 
 
