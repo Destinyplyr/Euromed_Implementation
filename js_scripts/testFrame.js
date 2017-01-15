@@ -90,3 +90,9 @@ function showPrice()
 	var x = document.getElementById("priceSelector").value;
 	document.getElementById("price").innerHTML = "Total cost : " + x;
 }
+
+
+function GoToProgram()
+{
+	window.top.location.href = "../php_scripts/fullProgram.php";
+}
