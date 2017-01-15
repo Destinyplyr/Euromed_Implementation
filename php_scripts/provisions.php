@@ -171,7 +171,7 @@
 	    <br>
 
 	    <div style="padding-left: 25%;" id="programButton"> 
-	      <button class="button ticketButton"> View the discounts </button>
+	      <button class="button ticketButton"> View the list </button>
 	      <button class="button ticketButton"> Full Program </button>
 	      <button class="button ticketButton"> GET TICKETS </button>
 	    </div>

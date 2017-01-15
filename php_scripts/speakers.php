@@ -105,11 +105,11 @@
 	 	  <col width="500">
 		  <tr>
 		    <td> <img style="padding-left: 45%;" src="../images/Axel_Ermert.jpg" width="150" height="200"> </td>
-		    <td> <p style="padding-left: 10%;" id="lorem_ipsum"> <span style="color:darkorange;"> Ermert </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;"> Innovation
+		    <td> <p style="padding-left: 10%;" id="lorem_ipsum"> <span style="color:darkorange;"> Ermert </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet <br> <span style="color:darkorange;"> Innovation
 		    and Technology @12:30 p.m. </span>  </p> </td>
 		    
-		    <td> <img style="padding-left: 0%;" src="../images/Fassina.png" width="150" height="200"> </td>
-		    <td> <p style="padding-left: 8%;" id="lorem_ipsum2"> <span style="color:darkorange;"> Fassina </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;"> Human cloning @17:40 p.m. </span>  </p> </td>
+		    <td> <img style="padding-right: 5%;" src="../images/Fassina.png" width="150" height="200"> </td>
+		    <td> <p style="padding-left: 3%;" id="lorem_ipsum2"> <span style="color:darkorange;"> Fassina </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet <br> <span style="color:darkorange;"> Human cloning @17:40 p.m. </span>  </p> </td>
 		  </tr>
 		</table>
 
@@ -121,10 +121,10 @@
 		 	  <col width="500">
 			  <tr>
 			    <td> <img style="padding-left: 60%;" src="../images/Wolfgang_Kippes.jpg" width="150" height="200"> </td>
-			    <td> <p style="padding-left: 25%;" id="lorem_ipsum"> <span style="color:darkorange;"> Wolfgang </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;"> Serious Games @14:00 p.m. </span>  </p> </td>
+			    <td> <p style="padding-left: 25%;" id="lorem_ipsum"> <span style="color:darkorange;"> Wolfgang </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum <br> <span style="color:darkorange;"> Serious Games @14:00 p.m. </span>  </p> </td>
 			    
-			    <td> <img style="padding-left: 40%;" src="../images/Mustafa_Erdik.jpg" width="150" height="200"> </td>
-			    <td> <p style="padding-left: 15%;" id="lorem_ipsum2"> <span style="color:darkorange;"> Mustafa </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;"> Cultural Technologies @19:50 p.m. </span>  </p> </td>
+			    <td> <img style="padding-right: 5%;" src="../images/Mustafa_Erdik.jpg" width="150" height="200"> </td>
+			    <td> <p style="padding-left: 3%;" id="lorem_ipsum2"> <span style="color:darkorange;"> Mustafa </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet <br> <span style="color:darkorange;"> Cultural Technologies @19:50 p.m. </span>  </p> </td>
 			  </tr>
 			</table>
 		</div>
@@ -157,7 +157,7 @@
 			    <td> <img style="padding-left: 60%;" src="../images/Moropoulou.jpg" width="150" height="200"> </td>
 			    <td> <p style="padding-left: 25%;" id="lorem_ipsum"> <span style="color:darkorange;"> Moropoulou </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing adipiscing elit <br> <span style="color:darkorange;"> Serious Games @14:00 p.m. </span>  </p> </td>
 			    
-			    <td> <img style="padding-left: 50%;" src="../images/Stephan.png" width="150" height="200"> </td>
+			    <td> <img style="padding-left: 40%;" src="../images/Stephan.png" width="150" height="200"> </td>
 			    <td> <p style="padding-left: 15%;" id="lorem_ipsum2"> <span style="color:darkorange;"> Stephan </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;"> Cultural Technologies @19:50 p.m. </span>  </p> </td>
 			  </tr>
 			</table>
@@ -180,11 +180,11 @@
 	 	  <col width="500">
 		  <tr>
 		    <td> <img style="padding-left: 45%;" src="http://pm1.narvii.com/5866/45cc61eb9e3eaefdc26be045e9f9fbfdf916f45b_hq.jpg" width="150" height="200"> </td>
-		    <td> <p style="padding-left: 10%;" id="lorem_ipsum"> <span style="color:darkorange;"> Mark </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;"> @12:30 p.m. </span>  </p> </td>
+		    <td> <p style="padding-left: 10%;" id="lorem_ipsum"> <span style="color:darkorange;"> Mark </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem  <br> <span style="color:darkorange;"> @12:30 p.m. </span>  </p> </td>
 		    
 		    <td> <img style="padding-left: 0%;" 
 		    src="https://design.ncsu.edu/sites/default/files/styles/large/public/12.05.15%20Let's%20Ride%202.JPG?itok=TqrNYrL5" width="200" height="200"> </td>
-		    <td> <p style="padding-left: 8%;" id="lorem_ipsum2"> <span style="color:darkorange;"> Penelope </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;"> @17:40 p.m. </span>  </p> </td>
+		    <td> <p style="padding-left: 8%;" id="lorem_ipsum2"> <span style="color:darkorange;"> Penelope </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing  <br> <span style="color:darkorange;"> @17:40 p.m. </span>  </p> </td>
 		  </tr>
 		</table>
 
@@ -196,15 +196,17 @@
 		 	  <col width="500">
 			  <tr>
 			    <td> <img style="padding-left: 60%;" src="http://www.lukihuber.com/wp-content/uploads/manual-thinking-workshop-1-1024x512.jpg" width="150" height="200"> </td>
-			    <td> <p style="padding-left: 25%;" id="lorem_ipsum"> <span style="color:darkorange;"> W1 </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;">  @14:00 p.m. </span>  </p> </td>
+			    <td> <p style="padding-left: 25%;" id="lorem_ipsum"> <span style="color:darkorange;"> W1 </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;">  @14:00 p.m. </span>  </p> </td>
 			    
-			    <td> <img style="padding-left: 40%;" src="https://www1.chemmedia.de/tl_files/inhalte/kw_days_2013/bilder_aktuelle_meldungen/Serious%20Gaming%20with%20Saba%20People%20Cloud%20(Workshop).jpg" width="150" height="200"> </td>
-			    <td> <p style="padding-left: 15%;" id="lorem_ipsum2"> <span style="color:darkorange;"> W2 </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;">  @19:50 p.m. </span>  </p> </td>
+			    <td> <img style="padding-left: 0%;" src="https://www1.chemmedia.de/tl_files/inhalte/kw_days_2013/bilder_aktuelle_meldungen/Serious%20Gaming%20with%20Saba%20People%20Cloud%20(Workshop).jpg" width="150" height="200"> </td>
+			    <td> <p style="padding-left: 8%;" id="lorem_ipsum2"> <span style="color:darkorange;"> W2 </span> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing <br> <span style="color:darkorange;">  @19:50 p.m. </span>  </p> </td>
 			  </tr>
 			</table>
 		</div>
 
+		<br> <br>
 
+		 <hr style="width: 85%">
 
 	    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
@@ -222,8 +224,4 @@
 	    </div>
 
 	</body>
-
-
-
-
 </html>

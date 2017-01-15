@@ -86,7 +86,7 @@
 	    <hr style="width: 85%">
 
 	    <br> 
-	    <h2> ...and while we're at it": </h2>
+	    <h2> ...and while we're at it : </h2>
 	 	<h3> Check out this page of this museum, near the conference center. </h3>
 
 	 	<div>
@@ -98,7 +98,7 @@
 	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> 
 
-	 		<img style="padding-left: 7%; float: left;" src="http://osmiva.com/wp-content/uploads/2013/03/5-National-Archaeological-Museum.jpg" width = "400" height = "250">
+	 		<img style="padding-left: 7%; float: left;" src="http://osmiva.com/wp-content/uploads/2013/03/5-National-Archaeological-Museum.jpg" width = "300" height = "250">
 
 	 		<br> <br>   <br> <br> <br>   <br> <br> <br>   <br> 
 	 			 
