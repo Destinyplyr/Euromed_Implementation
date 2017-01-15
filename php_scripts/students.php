@@ -62,8 +62,16 @@
       <li class="tickets"><a href="reg1_3.php"> TICKETS </a></li>
     </ul>
 
+    	<?php 
+    	  if(isset($_SESSION['name']))
+    	  {
+    	    echo "<span style = 'margin-left:5%;'> 
+    	      <a style = 'color:darkorange; padding:5px; font-size: 20px; border:1px solid;' href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a> "; 
+    	  }
+    	?> 
+
 	    <a href="../php_scripts/index.php">
-	       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
+	       <img id="homeBanner" alt="Link to homepage" src="../images/banner.jpg" border="0">
 	    </a>
 
 	    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
@@ -90,7 +98,7 @@
 
 	    <!-- <p id="extraInfo"> EXTRA INFO <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p> -->
 
-	    <img style="padding-left: 7%;" width="200" height="200" src="http://www.southampton.ac.uk/assets/imported/transforms/content-block/BoxGridWithImages_ImageBlock/DC4F72A8F076487CB557629E49CF774D/_3JB2926.jpg_SIA_JPG_fit_to_width_MEDIUM.jpg">
+	    <img style="padding-left: 7%;" width="200" height="200" src="../images/students_1.jpg">
 
 	    <p id="secondpar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>	
 	    </div>
@@ -98,7 +106,7 @@
 
 	    <p id="thirdpar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
 
-	    <img width="400" height="300" src="https://aos.iacpublishinglabs.com/question/aq/700px-394px/many-college-students-change-major_e73c1e71ac0c0ed3.jpg?domain=cx.aos.ask.com">
+	    <img width="400" height="300" src="../images/students_2.jpg">
 
 	    <br> <br> 
 

@@ -73,7 +73,7 @@
 	    ?> 
 
 	    <a href="../php_scripts/index.php">
-	       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
+	       <img id="homeBanner" alt="Link to homepage" src="../images/banner.jpg" border="0">
 	    </a>
 
 	     <br> <br>   <br> 

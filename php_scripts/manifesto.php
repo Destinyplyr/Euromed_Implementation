@@ -61,8 +61,16 @@
 		  <li class="tickets"><a href="reg1_3.php"> TICKETS </a></li>
 		</ul>
 
+	     <?php 
+		      if(isset($_SESSION['name']))
+		      {
+		        echo "<span style = 'margin-left:5%;'> 
+		          <a style = 'color:darkorange; padding:5px; font-size: 20px; border:1px solid;' href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a> "; 
+		      }
+  		  ?> 
+
 	    <a href="../php_scripts/index.php">
-	       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
+	       <img id="homeBanner" alt="Link to homepage" src="../images/banner.jpg" border="0">
 	    </a>
 
 	    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->

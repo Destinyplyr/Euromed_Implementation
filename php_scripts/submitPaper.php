@@ -64,8 +64,16 @@
       <li class="tickets"><a href="reg1_3.php"> TICKETS </a></li>
     </ul>
 
+    	<?php 
+    	  if(isset($_SESSION['name']))
+    	  {
+    	    echo "<span style = 'margin-left:5%;'> 
+    	      <a style = 'color:darkorange; padding:5px; font-size: 20px; border:1px solid;' href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a>"; 
+    	  }
+    	?> 
+
 	    <a href="../php_scripts/index.php">
-	       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
+	       <img id="homeBanner" alt="Link to homepage" src="../images/banner.jpg" border="0">
 	    </a>
 
 	    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
@@ -89,7 +97,7 @@
 	    		<p id="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 	    		 sed do sed do <br> sed do sed do sed do sed do sed sed do sed do sed do sed do sed do
 	    		sed do sed </p>
-	    		<img src="http://sces.org.uk/wp-content/uploads/2016/01/conference2.jpg" width="500" height="200">
+	    		<img src="../images/speakers_subm.jpg" width="500" height="200">
 	    		</div>
 	    	</li>
 	    	<li style="padding-right: 0%;"> 
@@ -118,7 +126,7 @@
 	    		<p id="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 	    		 sed do sed do <br> sed do sed do sed do sed do sed sed do sed do sed do sed do sed do
 	    		sed do sed </p>
-	    		<img src="http://www.hcst.gov.jo/sites/default/files/workshop_0.jpg" width="500" height="200">
+	    		<img src="../images/workshop_subm.jpg" width="500" height="200">
 	    		</div>
 	    	</li>
 	    	<li style="padding-right: 0%;"> 

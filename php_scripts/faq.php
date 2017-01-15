@@ -63,8 +63,16 @@
       <li class="tickets"><a href="reg1_3.php"> TICKETS </a></li>
     </ul>
 
+	     <?php 
+		      if(isset($_SESSION['name']))
+		      {
+		        echo "<span style = 'margin-left:5%;'> 
+		          <a style = 'color:darkorange; padding:5px; font-size: 20px; border:1px solid;' href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a> "; 
+		      }
+  		  ?> 
+
 	    <a href="../php_scripts/index.php">
-	       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
+	       <img id="homeBanner" alt="Link to homepage" src="../images/banner.jpg" border="0">
 	    </a>
 
 	    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
@@ -84,11 +92,7 @@
 
 	    <br>
 
-	  <!--   <div id="programButton"> 
-	      <button class="button ticketButton"> View the questions and answers for this category
-	      	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">  
-	      </button>
-	    </div> -->
+
 	   <div id="legends">
 	    	<button onclick="showHide(1);" class="collapseButton"> View the questions and answers for this category  
 	    		
@@ -124,11 +128,6 @@
 
 	    <br>
 
-	    <!-- <div id="programButton"> 
-	      <button class="button ticketButton"> View the questions and answers for this category
-	      	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
-	      </button>
-	    </div> -->
 
 	    <div id="legends">
 	     	<button onclick="showHide(2);" class="collapseButton"> View the questions and answers for this category  
@@ -163,11 +162,6 @@
 
 	    <br>
 
-	    <!-- <div id="programButton"> 
-	      <button class="button ticketButton"> View the questions and answers for this category 
-	      	<img style="padding : 0px 0px 0px 10px;" alt="plus_image" src="../images/plus_icon.png" width="15" height="15">
-	      </button>
-	    </div> -->
 	    <div id="legends">
 	     	<button onclick="showHide(3);" class="collapseButton"> View the questions and answers for this category  
 	     		

@@ -62,7 +62,7 @@
     </ul>
 
 	    <a href="../php_scripts/index.php">
-	       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
+	       <img id="homeBanner" alt="Link to homepage" src="../images/banner.jpg" border="0">
 	    </a>
 
 	    <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
@@ -92,7 +92,7 @@
 	 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 	 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p> 
 
-	 		<img style="padding-left: 7%; float: left;" src="http://osmiva.com/wp-content/uploads/2013/03/5-National-Archaeological-Museum.jpg" width = "300" height = "250">
+	 		<img style="padding-left: 7%; float: left;" src="../images/museum.jpg" width = "300" height = "250">
 
 	 		<br> <br>   <br> <br> <br>   <br> <br> <br>   <br> 
 	 			 

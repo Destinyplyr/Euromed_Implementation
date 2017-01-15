@@ -63,8 +63,16 @@
       <li class="tickets"><a href="reg1_3.php"> TICKETS </a></li>
     </ul>
 
+	     <?php 
+		      if(isset($_SESSION['name']))
+		      {
+		        echo "<span style = 'margin-left:5%;'> 
+		          <a style = 'color:darkorange; padding:5px; font-size: 20px; border:1px solid;' href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a> "; 
+		      }
+  		  ?> 
+
 	    <a href="../php_scripts/index.php">
-	       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
+	       <img id="homeBanner" alt="Link to homepage" src="../images/banner.jpg" border="0">
 	    </a>
 
 	     <br> <br>   <br> 
@@ -173,11 +181,11 @@
 	 	  <col width="100">
 	 	  <col width="500">
 		  <tr>
-		    <td> <img style="padding-left: 45%;" src="http://pm1.narvii.com/5866/45cc61eb9e3eaefdc26be045e9f9fbfdf916f45b_hq.jpg" width="150" height="200"> </td>
+		    <td> <img style="padding-left: 45%;" src="../images/NERDOULAS.jpg" width="150" height="200"> </td>
 		    <td> <p style="padding-left: 10%;" id="lorem_ipsum"> <span style="color:darkorange;"> Mark </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem  <br> <span style="color:darkorange;"> @12:30 p.m. </span>  </p> </td>
 		    
 		    <td> <img style="padding-left: 0%;" 
-		    src="https://design.ncsu.edu/sites/default/files/styles/large/public/12.05.15%20Let's%20Ride%202.JPG?itok=TqrNYrL5" width="200" height="200"> </td>
+		    src="../images/thinking_lady.JPG" width="200" height="200"> </td>
 		    <td> <p style="padding-left: 8%;" id="lorem_ipsum2"> <span style="color:darkorange;"> Penelope </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing  <br> <span style="color:darkorange;"> @17:40 p.m. </span>  </p> </td>
 		  </tr>
 		</table>
@@ -189,10 +197,10 @@
 		 	  <col width="100">
 		 	  <col width="500">
 			  <tr>
-			    <td> <img style="padding-left: 60%;" src="http://www.lukihuber.com/wp-content/uploads/manual-thinking-workshop-1-1024x512.jpg" width="150" height="200"> </td>
+			    <td> <img style="padding-left: 60%;" src="../images/workshop_1.jpg" width="150" height="200"> </td>
 			    <td> <p style="padding-left: 25%;" id="lorem_ipsum"> <span style="color:darkorange;"> W1 </span> <br>  Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit <br> <span style="color:darkorange;">  @14:00 p.m. </span>  </p> </td>
 			    
-			    <td> <img style="padding-left: 0%;" src="https://www1.chemmedia.de/tl_files/inhalte/kw_days_2013/bilder_aktuelle_meldungen/Serious%20Gaming%20with%20Saba%20People%20Cloud%20(Workshop).jpg" width="150" height="200"> </td>
+			    <td> <img style="padding-left: 0%;" src="../images/workshop_2.jpg" width="150" height="200"> </td>
 			    <td> <p style="padding-left: 8%;" id="lorem_ipsum2"> <span style="color:darkorange;"> W2 </span> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing <br> <span style="color:darkorange;">  @19:50 p.m. </span>  </p> </td>
 			  </tr>
 			</table>

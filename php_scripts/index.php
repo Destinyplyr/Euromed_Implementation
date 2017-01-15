@@ -90,7 +90,7 @@
     
 
     <a href="index.php">
-       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
+       <img id="homeBanner" alt="Link to homepage" src="../images/banner.jpg" border="0">
     </a>
 
 
@@ -353,21 +353,21 @@
       <p id="Accomo"> Suggested Accommodation : 
       <div class="img">
         <a target="_blank" href="http://www.timeoutcyprus.com/sites/default/files/ajax.jpg">
-          <img src="http://www.timeoutcyprus.com/sites/default/files/ajax.jpg" alt="timeoutcyprus" width="300" height="200">
+          <img src="../images/hotel_1.jpg" alt="timeoutcyprus" width="300" height="200">
         </a>
         <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
       </div>
 
       <div class="img">
         <a target="_blank" href="http://www.navarriahotel.com/images/w_66219.jpg">
-          <img src="http://www.navarriahotel.com/images/w_66219.jpg" alt="navarriahotel" width="300" height="200">
+          <img src="../images/hotel_2.jpg" alt="navarriahotel" width="300" height="200">
         </a>
         <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
       </div>
 
       <div class="img">
         <a target="_blank" href="https://images.trvl-media.com/hotels/2000000/1460000/1457300/1457242/1457242_39_z.jpg">
-          <img src="https://images.trvl-media.com/hotels/2000000/1460000/1457300/1457242/1457242_39_z.jpg" alt="navarriahotel" width="300" height="200">
+          <img src="../images/hotel_3.jpg" alt="navarriahotel" width="300" height="200">
         </a>
         <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
       </div>
@@ -385,19 +385,19 @@
 
     <div id="content">
         <a title="Thales." class="tooltip">
-            <img src="http://www.euromed2016.eu/application/files/9614/4724/9014/e-space.png"  class="images" />
+            <img src="../images/sponsor_1.png"  class="images" />
         </a>
         <a title="Europa Nostra." class="tooltip">
-            <img src="http://www.euromed2016.eu/application/files/5814/7385/6117/EuropaNostra_red_1.png" class="images" />
+            <img src="../images/sponsor_2.png" class="images" />
         </a>
         <a title="Vimm." class="tooltip">
-            <img src="http://www.euromed2016.eu/application/files/2214/4724/9014/DHRLAB.png"  class="images" />
+            <img src="../images/sponsor_3.png"  class="images" />
         </a>
         <a title="Dachverband." class="tooltip">
-            <img src="http://www.euromed2016.eu/application/files/2614/7489/3536/cys_logo.png"  class="images" />
+            <img src="../images/sponsor_4.png"  class="images" />
         </a>
         <a title="Digitale Rekonstruktion." class="tooltip">
-            <img src="http://www.euromed2016.eu/application/files/5314/4724/8341/high_res_cut_logo.png"  class="images" />
+            <img src="../images/sponsor_6.png"  class="images" />
         </a>
     </div>
 
