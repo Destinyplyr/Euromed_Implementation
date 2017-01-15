@@ -99,7 +99,8 @@
    				   		$row=mysqli_fetch_row($result);
    			?>
    					<form style="margin-left: 13%;" method="post" action="">
-	   				   <label> Name </label> <input type="text" name="name" placeholder= <?php echo $row[0] ?> /> <br>
+	   				   <label> Username </label> <input type="text" name="name" placeholder= <?php echo $row[0] ?> /> <br>
+	   				   <label> Name </label> <?php echo "<span style='padding-left:15px; color:white;'>" . $row[12] . "</span>" ?> <br>
 	   				   <label> E-mail </label> <input type="text" name="email" placeholder= <?php echo $row[1] ?> /> <br>
 	   				   <label> Telephone </label> <input type="text" name="telephone" placeholder= <?php echo $row[2] ?> /> <br>
 	   				   <label> Institution </label> <input type="text" name="institution" placeholder= <?php echo $row[3] ?> /> <br>

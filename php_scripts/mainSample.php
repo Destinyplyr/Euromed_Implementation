@@ -78,13 +78,15 @@
     <?php 
       if(isset($_SESSION['name']))
       {
-        echo "<p> 
-          <a style = 'color:darkorange; padding:5px; border:1px solid;' href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a> 
-        <span style = 'margin-left:75%;' >
+        echo "<span style = 'margin-left:5%;'> 
+          <a style = 'color:darkorange; padding:5px; font-size: 20px; border:1px solid;' href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a> 
+        
+        </span>
+        <span style ='position:absolute; left: 1100px;' >
         
         <button class='loginButton' onclick='showLogout();'> Logout </button>
         </span>
-      </p>"; 
+      "; 
       }
     ?> 
 
@@ -296,31 +298,31 @@
     <p id="countText" style="padding-right: 10%;"> SPEAKERS <p> 
 
     <div class="inline-div">
-        <p align="center">Title 1</p>
+        <p align="center">Program Info</p>
          <!-- <hr class="vr"> -->
        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
        </p>
        <div id="getTickets"> 
-         <button class="button ticketButton">GET TICKETS</button>
+         <button class="button ticketButton">Program </button>
        </div>
     </div>
 
     <div class="inline-div">
-    <p align="center">Title 2</p>
+    <p align="center">Provisions Info</p>
         <p id="programInfo">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="getTickets"> 
-          <button class="button ticketButton">GET TICKETS</button>
+          <button class="button ticketButton">Provisions</button>
         </div>
     </div>
     <div class="inline-div">
-        <p align="center">Title 3</p>
+        <p align="center">Paper submissions</p>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="getTickets"> 
-          <button class="button ticketButton">GET TICKETS</button>
+          <button class="button ticketButton">Submit your paper</button>
         </div>
     </div> 
 
@@ -336,31 +338,31 @@
     <p id="countText" style="padding-right: 10%;"> EXHIBITORS <p> 
 
     <div class="inline-div">
-        <p align="center">Title 1</p>
+        <p align="center">Program Info</p>
          <!-- <hr class="vr"> -->
        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
        </p>
        <div id="getTickets"> 
-         <button class="button ticketButton">GET TICKETS</button>
+         <button class="button ticketButton">Program</button>
        </div>
     </div>
 
     <div class="inline-div">
-    <p align="center">Title 2</p>
+    <p align="center">Practical Info</p>
         <p id="programInfo">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="getTickets"> 
-          <button class="button ticketButton">GET TICKETS</button>
+          <button class="button ticketButton">Venue and Provisions</button>
         </div>
     </div>
     <div class="inline-div">
-        <p align="center">Title 3</p>
+        <p align="center">Submissions</p>
         <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="getTickets"> 
-          <button class="button ticketButton">GET TICKETS</button>
+          <button class="button ticketButton">Submit your request</button>
         </div>
     </div> 
 
@@ -388,11 +390,32 @@
         </script>
 	    <p id="mapInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 
-      <br> <br> <br> <br>
-
-      <p id="Accomo"> Suggested Accommodation :  </p>
       <br>
-      <div>
+
+      <p id="Accomo"> Suggested Accommodation : 
+      <div class="img">
+        <a target="_blank" href="http://www.timeoutcyprus.com/sites/default/files/ajax.jpg">
+          <img src="http://www.timeoutcyprus.com/sites/default/files/ajax.jpg" alt="timeoutcyprus" width="300" height="200">
+        </a>
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+      </div>
+
+      <div class="img">
+        <a target="_blank" href="http://www.navarriahotel.com/images/w_66219.jpg">
+          <img src="http://www.navarriahotel.com/images/w_66219.jpg" alt="navarriahotel" width="300" height="200">
+        </a>
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+      </div>
+
+      <div class="img">
+        <a target="_blank" href="https://images.trvl-media.com/hotels/2000000/1460000/1457300/1457242/1457242_39_z.jpg">
+          <img src="https://images.trvl-media.com/hotels/2000000/1460000/1457300/1457242/1457242_39_z.jpg" alt="navarriahotel" width="300" height="200">
+        </a>
+        <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+      </div>
+       </p>
+
+      <!-- <div>
         <p id="lorem_ipsum">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
@@ -404,7 +427,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <img style="padding-left: 40em;" src="http://www.navarriahotel.com/images/w_66219.jpg" height="200" width="250" alt="accommonadation2">
-      </div>
+      </div> -->
  
 	  <!--   <p id="mapInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
 
@@ -416,7 +439,7 @@
 
    	<br> <br> <br> 
 
-   	<hr style="width: 85%; width: auto; overflow: hidden;">
+   	<hr style="width: 85%; overflow: hidden;">
 
     <br> <br> 
 

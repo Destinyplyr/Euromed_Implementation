@@ -122,7 +122,7 @@
 		    		</div>
 	    		</div>
 	    	</li>
-	    	<li style="padding-left: 12%;"> 
+	    	<li style="padding-left: 0%;"> 
 	    		Workshops
 	    		<div> 
 	    		<p id="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
@@ -179,7 +179,7 @@
 		    		</div>
 	    		</div>
 	    	</li>
-	    	<li style="padding-left: 12%;"> 
+	    	<li style="padding-left: 0%;"> 
 	    		Exhibition Events
 	    		<div> 
 	    		<p id="lorem_ipsum"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do </p>
@@ -224,7 +224,7 @@
  -->
 
 
- 		<ul id="EventsList" style="padding-left:37%;">
+ 		<ul id="EventsList" style="padding-left:31%;">
 	    	<li>
 	    		<div >Excursions
 	    		<div> 
