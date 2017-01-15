@@ -1,9 +1,5 @@
 <?php 
   session_start(); 
-  // if ((isset($_SESSION['name']) != '')) 
-  // {
-  //   echo $_SESSION['name'];
-  // }
 ?>
 
 
@@ -12,14 +8,9 @@
   <head>
     <title> Euromed 2016 | Home </title>
     <meta charset="utf-8">
-   <!--  <meta name="viewport" content="width=device-width, initial-scale=1"> -->
-   <!--  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-<!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"> </script> -->
     <link rel="stylesheet" type="text/css" href ="../css_scripts/homeCSS.css">
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato"> 
-    <script type="text/javascript" src="../js_scripts/testFrame.js"></script>       
-    <!-- <link rel="stylesheet" type="text/css" href ="../css_scripts/tdButton.css"> -->
+    <script type="text/javascript" src="../js_scripts/testFrame.js"></script> 
   </head>
   <body>
 
@@ -43,30 +34,30 @@
       <li style="padding-left: 15em" class="dropdown">
         <a href="javascript:void(0)" class="dropbtn"> Visitors </a>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="program.php">Program</a>
+          <a href="students.php">Students</a>
+          <a href="reg1_3.php">GET TICKETS</a>
         </div>
       </li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn"> Speakers </a>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="program.php">Program</a>
+          <a href="provisions.php">Provisions</a>
+          <a href="submitPaper.php">Submit your paper</a>
         </div>
       </li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn"> Exhibitors </a>
         <div class="dropdown-content">
-          <a href="#">Link 1</a>
-          <a href="#">Link 2</a>
-          <a href="#">Link 3</a>
+          <a href="program.php">Program</a>
+          <a href="exhibitors.php">Venue and Provisions</a>
+          <a href="exhibitors.php">Submit your request</a>
         </div>
       </li>
-      <li><a href="#venue"> Venue </a></li>
+      <li><a href="venue.php"> Venue </a></li>
       <li><a href="previous_events.php"> Previous Events </a></li>
-      <li class="tickets"><a href="#tickets"> TICKETS </a></li>
+      <li class="tickets"><a href="reg1_3.php"> TICKETS </a></li>
     </ul>
 
     <div id="myModal" class="modal">
@@ -96,19 +87,11 @@
         echo "<span style = 'margin-left:90%;' > <button class='loginButton' onclick='showLogin();'> Login </button> </span>";
       }
     ?>
-
     
-
-
-      <!-- <button onclick="showMe();" class="button ticketButton"> Login </button> -->
-      
-      
 
     <a href="index.php">
        <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
     </a>
-
-
 
 
     <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
@@ -119,22 +102,10 @@
     Preservation and Protection </p>
     <p> Filoxenia Conference Center | Nicosia, Cyprus </p> <br>
 
-    <!-- <div class="button-row">
-    	<div><a title="GET TICKETS"></a></div>
-    	<div><a title="another!"></a></div>
-  	</div> -->
     <div id="getTickets"> 
-      <a href="#tickets"><button class="button ticketButton">GET TICKETS</button></a>
+      <a href="reg1_3.php"><button class="button ticketButton">GET TICKETS</button></a>
     </div>
 
-    <!-- <a id="like" href="#" >Like</a> -->
-    <!-- <a href="" onclick="myAjax()" class="deletebtn">Delete</a> -->
-    <!-- <a href='query.php?hello=true'>Run PHP Function</a> -->
-    <!-- <a href='query.php'>Run PHP Function</a> -->
-    <!-- <form action="" method="GET">
-        <input type="text" name="query" />
-        <input type="submit" name="submit" value="Search" />
-    </form> -->
 
     <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
@@ -144,7 +115,6 @@
 
     <br> <br> 
 
-    <!--  <iframe width="350" height="150" src="https://w2.countingdownto.com/1633515" frameborder="0"></iframe> -->
     <p id="countText"> CONFERENCE COUNTDOWN  <p> <br>
     <div id="clockdiv">
       <div>
@@ -178,13 +148,6 @@
 
     <p id="countText" style="padding-right: 5%;"> KEYNOTE SPEAKERS  <p> 
 
-    <!-- <div id="speakers"> 
-    <img style="float: left; margin: 2% 0 15% 25%;" src="http://www.euromed2016.eu/application/files/7314/5432/9155/Wolfgang-Kippes_800.jpg" width="100" height="150" />
-    <img style="float: left; margin: 2% 0 15% 5%;" src="http://www.euromed2016.eu/application/files/6814/5432/9354/Fellner_060Rc.png" width="100" height="150"/>
-    <img style="float: left; margin: 2% 0 15% 5%;" src="http://www.euromed2016.eu/application/files/1114/5503/1175/Mustafa_Erdik.jpg" width="100" height="150"/>
-    <img style="float: left; margin: 2% 0 15% 5%;" src="http://www.euromed2016.eu/application/files/9414/7504/2696/Sarah_Image.jpg" width="100" height="150"/>
-    <img style="float: left; margin: 2% 0 15% 5%;" src="http://www.euromed2016.eu/application/files/3514/7504/2458/Axel-Ermert-2016.jpg" width="100" height="150"/>
-    </div> -->
 
     <div id="content">
         <a title="Wolfgang Kippes." class="tooltip">
@@ -207,7 +170,7 @@
     <br> <br>
 
     <div id="restSpeakersButton"> 
-      <button class="button ticketButton">CHECK OUT ALL THE SPEAKERS</button>
+      <a href="speakers.php"> <button class="button ticketButton">CHECK OUT ALL THE SPEAKERS</button> </a>
     </div>
 
     <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
@@ -226,13 +189,13 @@
     <br> <br>
 
     <div id="manifestoButton"> 
-      <button class="button ticketButton"> View our manifesto </button>
+      <a href="manifesto.php"> <button class="button ticketButton"> View our manifesto </button> </a>
     </div>
 
     <br> <br>
 
     <div id="previousEventsButton"> 
-      <button class="button ticketButton"> View previous events </button>
+      <a href="previous_events.php"> <button class="button ticketButton"> View previous events </button> </a>
     </div>
 
     <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
@@ -252,7 +215,7 @@
        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
        </p>
        <div id="programButton"> 
-         <button class="button ticketButton"> Program </button>
+          <a href="program.php"> <button class="button ticketButton"> Program </button> </a>
        </div>
     </div>
 
@@ -262,7 +225,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="programButton"> 
-          <button class="button ticketButton"> Students </button>
+          <a href="students.php"> <button class="button ticketButton"> Students </button> </a>
         </div>
     </div>
 
@@ -279,13 +242,9 @@
         DEADLINE 2
         </p>
         <div id="programButton"> 
-          <button class="button ticketButton">GET TICKETS</button>
+          <a href="reg1_3.php"> <button class="button ticketButton">GET TICKETS</button> </a>
         </div>
     </div>  
-
-
-
-
 
     <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
 
@@ -299,11 +258,10 @@
 
     <div class="inline-div">
         <p align="center">Program Info</p>
-         <!-- <hr class="vr"> -->
        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
        </p>
        <div id="getTickets"> 
-         <button class="button ticketButton">Program </button>
+         <a href="program.php"> <button class="button ticketButton">Program </button> </a>
        </div>
     </div>
 
@@ -313,7 +271,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="getTickets"> 
-          <button class="button ticketButton">Provisions</button>
+          <a href="provisions.php"> <button class="button ticketButton">Provisions</button> </a>
         </div>
     </div>
     <div class="inline-div">
@@ -322,7 +280,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="getTickets"> 
-          <button class="button ticketButton">Submit your paper</button>
+          <a href="submitPaper.php"> <button class="button ticketButton">Submit your paper</button> </a>
         </div>
     </div> 
 
@@ -343,7 +301,7 @@
        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
        </p>
        <div id="getTickets"> 
-         <button class="button ticketButton">Program</button>
+         <a href="program.php"> <button class="button ticketButton">Program</button> </a>
        </div>
     </div>
 
@@ -353,7 +311,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="getTickets"> 
-          <button class="button ticketButton">Venue and Provisions</button>
+          <a href="exhibitors.php"> <button class="button ticketButton">Venue and Provisions</button> </a>
         </div>
     </div>
     <div class="inline-div">
@@ -362,7 +320,7 @@
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
         </p>
         <div id="getTickets"> 
-          <button class="button ticketButton">Submit your request</button>
+          <a href="exhibitors.php"> <button class="button ticketButton">Submit your request</button> </a>
         </div>
     </div> 
 
@@ -415,26 +373,6 @@
       </div>
        </p>
 
-      <!-- <div>
-        <p id="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <img style="padding-left: 40em;" src="http://www.timeoutcyprus.com/sites/default/files/ajax.jpg" height="200" width="250" alt="accommonadation1">
-      </div>
-
-      <div>
-        <p id="lorem_ipsum">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <img style="padding-left: 40em;" src="http://www.navarriahotel.com/images/w_66219.jpg" height="200" width="250" alt="accommonadation2">
-      </div> -->
- 
-	  <!--   <p id="mapInfo">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
-
-	    
-
-        
-
    	</div>
 
    	<br> <br> <br> 
@@ -479,8 +417,8 @@
     <br> 
     
     <div style="padding-left: 36%;" id="programButton"> 
-        <button class="button ticketButton"> FAQ </button>
-        <button class="button ticketButton"> Contact </button>
+        <a href="faq.php"> <button class="button ticketButton"> FAQ </button> </a>
+        <a href="contact.php"> <button class="button ticketButton"> Contact </button> </a>
     </div>
     
 

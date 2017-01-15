@@ -20,14 +20,14 @@
 	<body>
 		<ul>
 	      <div id="media">
-	        <a href="http://www.w3schools.com">
+	        <a href="http://www.facebook.com">
 	        <img  alt="facebook" src="../images/_facebookIcon.png" width="50" height="55">
 	        </a>
 
-	        <a href="http://www.hello.com">
+	        <a href="http://www.twitter.com">
 	        <img  alt="twitter" src="../images/_twitterIcon.png" width="50" height="55"> </a>
 
-	        <a href="http://www.w3schools.com">
+	        <a href="http://www.instagram.com">
 	        <img  alt="instagram" src="../images/_instagramIcon.png" width="50" height="55">
 	        </a>
 	      </div>
@@ -35,40 +35,42 @@
 
 	      <li><a href="contact.php"> Contact </a></li>
 	      <li> <a href="faq.php"> FAQ </a></li>
-	      <?php 
-	       	if(isset($_SESSION['name']))
-	        {
-	        	echo "<li> <a>  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; 
-	        }
-	      ?> 
 	      <li style="padding-left: 15em" class="dropdown">
 	        <a href="javascript:void(0)" class="dropbtn"> Visitors </a>
 	        <div class="dropdown-content">
-	          <a href="#">Link 1</a>
-	          <a href="#">Link 2</a>
-	          <a href="#">Link 3</a>
+	          <a href="program.php">Program</a>
+	          <a href="students.php">Students</a>
+	          <a href="reg1_3.php">GET TICKETS</a>
 	        </div>
 	      </li>
 	      <li class="dropdown">
 	        <a href="javascript:void(0)" class="dropbtn"> Speakers </a>
 	        <div class="dropdown-content">
-	          <a href="#">Link 1</a>
-	          <a href="#">Link 2</a>
-	          <a href="#">Link 3</a>
+	          <a href="program.php">Program</a>
+	          <a href="provisions.php">Provisions</a>
+	          <a href="submitPaper.php">Submit your paper</a>
 	        </div>
 	      </li>
 	      <li class="dropdown">
 	        <a href="javascript:void(0)" class="dropbtn"> Exhibitors </a>
 	        <div class="dropdown-content">
-	          <a href="#">Link 1</a>
-	          <a href="#">Link 2</a>
-	          <a href="#">Link 3</a>
+	          <a href="program.php">Program</a>
+	          <a href="exhibitors.php">Venue and Provisions</a>
+	          <a href="exhibitors.php">Submit your request</a>
 	        </div>
 	      </li>
-	      <li><a href="#venue"> Venue </a></li>
+	      <li><a href="venue.php"> Venue </a></li>
 	      <li><a href="previous_events.php"> Previous Events </a></li>
-	      <li class="tickets"><a href="#tickets"> TICKETS </a></li>
+	      <li class="tickets"><a href="reg1_3.php"> TICKETS </a></li>
 	    </ul>
+
+	    <?php 
+	      if(isset($_SESSION['name']))
+	      {
+	        echo "<span style = 'margin-left:5%;'> 
+	          <a style = 'color:darkorange; padding:5px; font-size: 20px; border:1px solid;' href=". "profileManagement.php" . ">  Hello user,  " .  $_SESSION['name'] . "</a> ";
+	      }
+	    ?> 
 
 	    <a href="../php_scripts/index.php">
 	       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">

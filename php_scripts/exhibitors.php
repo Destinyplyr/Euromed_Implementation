@@ -18,15 +18,15 @@
 
 	<body>
 		<ul class="MenuClass">
-	      <div style="float: left;" id="media">
-	        <a href="http://www.w3schools.com">
+	      <div id="media">
+	        <a href="http://www.facebook.com">
 	        <img  alt="facebook" src="../images/_facebookIcon.png" width="50" height="55">
 	        </a>
 
-	        <a href="http://www.hello.com">
+	        <a href="http://www.twitter.com">
 	        <img  alt="twitter" src="../images/_twitterIcon.png" width="50" height="55"> </a>
 
-	        <a href="http://www.w3schools.com">
+	        <a href="http://www.instagram.com">
 	        <img  alt="instagram" src="../images/_instagramIcon.png" width="50" height="55">
 	        </a>
 	      </div>
@@ -34,39 +34,33 @@
 
 	      <li><a href="contact.php"> Contact </a></li>
 	      <li> <a href="faq.php"> FAQ </a></li>
-	      <?php 
-	       	if(isset($_SESSION['name']))
-	        {
-	        	echo "<li> <a>  Hello user,  " .  $_SESSION['name'] . "</a> </li>"; 
-	        }
-	      ?> 
 	      <li style="padding-left: 15em" class="dropdown">
 	        <a href="javascript:void(0)" class="dropbtn"> Visitors </a>
 	        <div class="dropdown-content">
-	          <a href="#">Link 1</a>
-	          <a href="#">Link 2</a>
-	          <a href="#">Link 3</a>
+	          <a href="program.php">Program</a>
+	          <a href="students.php">Students</a>
+	          <a href="reg1_3.php">GET TICKETS</a>
 	        </div>
 	      </li>
 	      <li class="dropdown">
 	        <a href="javascript:void(0)" class="dropbtn"> Speakers </a>
 	        <div class="dropdown-content">
-	          <a href="#">Link 1</a>
-	          <a href="#">Link 2</a>
-	          <a href="#">Link 3</a>
+	          <a href="program.php">Program</a>
+	          <a href="provisions.php">Provisions</a>
+	          <a href="submitPaper.php">Submit your paper</a>
 	        </div>
 	      </li>
 	      <li class="dropdown">
 	        <a href="javascript:void(0)" class="dropbtn"> Exhibitors </a>
 	        <div class="dropdown-content">
-	          <a href="#">Link 1</a>
-	          <a href="#">Link 2</a>
-	          <a href="#">Link 3</a>
+	          <a href="program.php">Program</a>
+	          <a href="exhibitors.php">Venue and Provisions</a>
+	          <a href="exhibitors.php">Submit your request</a>
 	        </div>
 	      </li>
-	      <li><a href="#venue"> Venue </a></li>
+	      <li><a href="venue.php"> Venue </a></li>
 	      <li><a href="previous_events.php"> Previous Events </a></li>
-	      <li class="tickets"><a href="#tickets"> TICKETS </a></li>
+	      <li class="tickets"><a href="reg1_3.php"> TICKETS </a></li>
 	    </ul>
 
 	    <a href="../php_scripts/index.php">
@@ -114,7 +108,7 @@
 	        <li>5 Square Meters </li>
 	        <li>100 meters far from center</li>
 	        <li>2 minutes presentation at conference  </li>
-	        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+	        <li class="grey"><a href="reg1_3.php" class="button">Sign Up</a></li>
 	      </ul>
 	    </div>
 
@@ -126,7 +120,7 @@
 	        <li>10 Square Meters </li>
 	        <li>50 meters far from center</li>
 	        <li>5 minutes presentation at conference </li>
-	        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+	        <li class="grey"><a href="reg1_3.php" class="button">Sign Up</a></li>
 	      </ul>
 	    </div>
 
@@ -138,7 +132,7 @@
 	        <li> 30 Square Meters </li>
 	        <li> At the center </li>
 	        <li>10 minutes presentation at conference </li>
-	        <li class="grey"><a href="#" class="button">Sign Up</a></li>
+	        <li class="grey"><a href="reg1_3.php" class="button">Sign Up</a></li>
 	      </ul>
 	    </div>
 	    
