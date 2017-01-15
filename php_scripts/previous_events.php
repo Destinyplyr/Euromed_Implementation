@@ -68,7 +68,7 @@
 	      <li class="tickets"><a href="#tickets"> TICKETS </a></li>
 	    </ul>
 
-	    <a href="../php_scripts/mainSample.php">
+	    <a href="../php_scripts/index.php">
 	       <img id="homeBanner" alt="Link to homepage" src="http://www.culturavietii.ro/wp-content/uploads/2015/04/TranshumanMichelangelo-1024x567.jpg" border="0">
 	    </a>
 

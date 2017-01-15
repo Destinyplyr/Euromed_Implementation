@@ -3,7 +3,7 @@
 	if ((isset($_SESSION['name']) != '')) 
 	{
 		//echo $_SESSION['name'];
-		header("Location: mainSample.php");
+		header("Location: index.php");
 	}
 	//echo "myefmtmymy";
 	error_reporting(-1);
