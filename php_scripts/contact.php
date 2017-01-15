@@ -78,7 +78,7 @@
 
 	    <br> 
 
-	    <<!-- hr style="width: 40%;"> -->
+	    <!-- hr style="width: 40%;"> -->
 
 	    <br> <br> <br>
 
